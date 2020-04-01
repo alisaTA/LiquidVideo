@@ -5,8 +5,8 @@ require "fileutils"
 require 'byebug'
 
 class GoogleService
-  SHEET_NAME = 'New Sheet Name'
-  SPREADSHEET_ID = '1NjJB1WFf_Ew2yK8WHtpTU85zcg9SqXzahwQZzOUXIZM'
+  SHEET_NAME = 'LiquidVideo Queries'
+  SPREADSHEET_ID = '1x-3rACNxWEb7MvSS72Y5B2uGecGhWookNHOEmM-_e28"
   APPLICATION_NAME = 'Google Sheets API Ruby Quickstart'.freeze
   CREDENTIALS_PATH = 'credentials.json'.freeze
   TOKEN_PATH = (Rails.root.to_s + "/token.yaml").freeze
@@ -14,10 +14,10 @@ class GoogleService
 
   def initialize
     @service = set_service
-  end 
+  end
 
   def append_values(_values)
-    
+
     values = [[]]
     values = _values
     value_range = Google::Apis::SheetsV4::ValueRange.new(values: values)
@@ -40,8 +40,8 @@ class GoogleService
     service.client_options.application_name = APPLICATION_NAME
     service.authorization = authorize
 
-    return service 
-  end 
+    return service
+  end
 
 
 
@@ -66,4 +66,4 @@ class GoogleService
     credentials
   end
 
-end 
+end
