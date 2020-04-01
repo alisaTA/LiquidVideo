@@ -35,6 +35,9 @@ gem 'font-awesome-sass', '~> 5.6.1'
 
 gem 'letter_opener', group: :development  #testing for email after query gets created
 gem 'dotenv-rails', groups: [:development, :test]
+gem 'google-api-client' # google sheets api
+
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 

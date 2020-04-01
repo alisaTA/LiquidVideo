@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'support@mataloncreditsolutions.com'
+  default from: 'test@aol.com'
   layout 'mailer'
 end
