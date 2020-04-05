@@ -6,7 +6,7 @@ require 'byebug'
 
 class GoogleService
   SHEET_NAME = 'LiquidVideo Queries'
-  SPREADSHEET_ID = '1x-3rACNxWEb7MvSS72Y5B2uGecGhWookNHOEmM-_e28"
+  SPREADSHEET_ID = "1x-3rACNxWEb7MvSS72Y5B2uGecGhWookNHOEmM-_e28"
   APPLICATION_NAME = 'Google Sheets API Ruby Quickstart'.freeze
   CREDENTIALS_PATH = 'credentials.json'.freeze
   TOKEN_PATH = (Rails.root.to_s + "/token.yaml").freeze
@@ -60,7 +60,7 @@ class GoogleService
            "resulting code after authorization:\n\n\n" + url
       code = gets
       credentials = authorizer.get_and_store_credentials_from_code(
-        user_id: user_id, code: code, base_url: OOB_URI
+        user_id: user_id, code: code, base_url: "https://309b6f3e.ngrok.io"
       )
     end
     credentials
