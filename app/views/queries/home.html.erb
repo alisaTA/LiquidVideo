@@ -31,14 +31,22 @@
 </div>
 
 <div class="home-banner">
-  <h1>LiquidVideo</h1>
+  <div class="banner-title white-title">
+    <h1>LiquidVideo</h1>
+  </div>
+  <!-- VIDEOPLAYER -->
+  <div class="background-videoplayer">
+    <video autoplay loop muted playsinline>
+      <source src="<%= image_path('lv_background_video.mp4')%>" type="video/mp4" />
+    </video>
+  </div>
+  <!-- VIDEOPLAYER -->
+
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-6">
+        <div class="col-6 welcome-text grey-opacity-wrap">
           <%= "Lorem ipsum dolor sit amet, consectetur adipisicing elit " * 3 %>
         </div>
      </div>
     </div>
 </div>
-
-
