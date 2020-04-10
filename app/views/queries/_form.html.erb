@@ -1,0 +1,10 @@
+<div class="queryform">
+  <%= simple_form_for @query do |f| %>
+    <%= f.input :firstname %>
+    <%= f.input :lastname %>
+    <%= f.input :company %>
+    <%= f.input :email %>
+    <%= f.input :phone %>
+    <%= f.submit "please submit your query", class: "btn btn-primary" %>
+  <% end %>
+</div>
