@@ -1,10 +1,51 @@
-<div class="queryform">
-  <%= simple_form_for @query do |f| %>
-    <%= f.input :firstname %>
-    <%= f.input :lastname %>
-    <%= f.input :company %>
-    <%= f.input :email %>
-    <%= f.input :phone %>
-    <%= f.submit "please submit your query", class: "btn btn-primary" %>
-  <% end %>
+
+
+
+
+
+<div class="form-card-wrap">
+  <i id='xOutIcon'class="far fa-times-circle"></i>
+  <div class="form-content-wrap">
+    <p style="font-size: 30px;">Lets Connect</p>
+    <p>Call <span style="color: blue;">+1-480-329-4705</span> or email us <span style="color: blue;">info@liquidvideo360.com</span>
+      Or provide your contact information below
+      We look forward to speaking with you.
+    </p>
+  </div>
+
+  <div class="queryform">
+    <%= simple_form_for(query) do |f| %>
+    <div class="form-row">
+      <label for="name">Name</label>
+      <div class="input-row">
+        <%= f.input :firstname, input_html: { id: 'name' }, label: false , placeholder: 'first name'%>
+      </div>
+        <%= f.input :lastname, label: false, placeholder: 'last name'%>
+
+    </div>
+
+    <div class="form-row">
+      <label for="company">Company</label>
+        <%= f.input :company, input_html: { id: 'company' }, label: false %>
+    </div>
+    <div class="form-row">
+      <label for="email">Email</label>
+      <%= f.input :email, input_html: { id: 'email' }, label: false, placeholder: 'email' %>
+    </div>
+    <div class="form-row">
+      <label for="phone">Phone</label>
+      <%= f.input :phone, input_html: { id: 'phone' }, label: false, placeholder: 'phone'%>
+    </div>
+  
+    <div class="terms-of-service">
+      <p style="font-size: 14px">By submitting your information, you agree to our use of your data  to contact you.</p>
+    </div>
+
+    <div class="form-submit">
+      <%= f.submit "Contact me", class: "btn btn-primary white-form-submit" %>
+    </div>
+    <% end %>
+  </div>
+
+  
 </div>

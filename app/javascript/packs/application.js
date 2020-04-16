@@ -15,4 +15,11 @@
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
+
+import setModalListener  from '../openModal';
 console.log('Hello World from Webpacker')
+
+
+window.onload = setModalListener('#contactMe', '#contactModal');
+window.onload = setModalListener('#xOutIcon', '#contactModal');
+

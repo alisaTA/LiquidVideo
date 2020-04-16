@@ -1,0 +1,40 @@
+.footer{
+  background: $footer-blue;
+  background-color: $footer-blue;
+  height: 300px;
+  width: 100%;
+  color: white;
+
+  .footer-inner{
+    height: 100%;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .follow-us-bar{
+    display: flex;
+    flex-direction: row;
+     p:nth-child(1){
+      padding-top: 10px;
+     }
+  }
+
+  .follow-social-networks{
+    width: 75%;
+    display: flex;
+    flex-direcion: row;
+    justify-content: space-evenly;
+    font-size: 50px;
+  }
+
+
+  .contact-us-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 75%;
+  }
+}
