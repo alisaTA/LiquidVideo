@@ -13,6 +13,7 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.12'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+gem 'font-awesome-sass', '~> 5.6.1'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
@@ -32,7 +33,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'simple_form'
 
-gem 'font-awesome-sass', '~> 5.6.1'
+
 
 gem 'letter_opener', group: :development  #testing for email after query gets created
 gem 'dotenv-rails', groups: [:development, :test]
