@@ -16,6 +16,8 @@
 // const imagePath = (name) => images(name, true)
 
 
+import 'stylesheets/application'
+
 import setModalListener  from '../openModal';
 console.log('Hello World from Webpacker')
 
