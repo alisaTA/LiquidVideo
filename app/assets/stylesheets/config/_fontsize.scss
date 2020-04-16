@@ -1,0 +1,17 @@
+$size_header: 48px;
+$size_title_sub: 32px;
+$size_sub_header: 24px;
+
+
+#header{ 
+  font-size: $size_header; 
+}
+#sub-header{ 
+  font-size: $size_sub_header;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px;
+  }
+#title-sub-header{ 
+  font-size: $size_title_sub
+}

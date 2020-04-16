@@ -15,6 +15,9 @@
         <li class="nav-item">
           <a class="nav-link" href="#">FAQ</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" id='contactMe'>Contact Me</a>
+        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Dropdown link
@@ -30,6 +33,10 @@
   </nav>
 </div>
 
+<div id='contactModal'  data-visible='false' style="z-index: 99; position: fixed; top: 10px;width: 100%;height: 0px; display: none">
+  <%= render 'queries/form', query: @query %>
+</div>
+
 <div class="home-banner">
   <div class="banner-title">
     <h1>Get Superhero Vision To Secure Your Property</h1>
@@ -43,12 +50,204 @@
   </div>
   <!-- VIDEOPLAYER -->
 
-    <div class="container">
-      <div class="row justify-content-center">
-        <!-- <div class="col-6 welcome-text grey-opacity-wrap">
-          <%= "Hello" %> -->
+ <div class="container">
+  <!-- INTRO TEXT -->
+   <div class="intro-text-wrap">
+     <div class="intro-text-inner">
+       <p id="title-sub-header">LiquidVideo was selected by the Israel Defense Forces to design the security system for the largest maximum security terrorist prison in Israel and for designing the real-time detection systems of 25 of the most vulnerable towns in the country.</p>
+     </div>
+   </div>
+  <!-- INTRO TEXT -->
+
+
+  <!-- FEATURE CIRCLE -->
+    <div class="feature-circle-wrap">
+        <div class="feature-circle-inner">
+          <%= image_tag('feature-circle', width: '100%', height: '100%') %>
+        </div>
+    </div>
+  <!-- FEATURE CIRCLE -->
+
+
+<!-- READ ABOUT BANNER -->
+  <div class="read-about-banner">
+     <p id='header'>Advantages</p>
+
+     <p>Save a life, save a world. Every life is precious.</p>
+
+     <p>Our software is based on decades of experience with real-life threats to entire communities. It dramatically lowers response time and offers a solution in real-time and 3D providing spatial context and geo-visual unifed display which provides actionable situational awareness for an accelerated proactive response for entering a threatened faclity.</p>
+
+     <p>We strive to create, enable and empower first responders and local guards to ‘see’ their environments thoroughly - through walls and around corners - to dramatically reduce response time, reduce risk and save lives.</p>
+
+    <p> For the site owner:</p>
+    <ul>
+      <li>‘bolts’ onto the existing security system</li>
+      <li>low cost, highly effective</li>
+      <li>qualified procurement through FEMA grants</li>
+      <li>allows for faster return to normal operations thereby minimizing business interruptions</li>
+    </ul>
+
+    <p>For First Responders:</p>
+    <ul>
+      <li>substantially reduces risk to emergency personnel by reducing unknowns</li>
+      <li>eliminates need for site or building plans</li>
+      <li>no prior knowledge of building needed for immediate & decisive action</li>
+      <li>video content displayed in full context & is auto-oriented to the responder</li>
+      <li>reduces collateral damage and shut down time, reducing man hours</li>
+    </ul>
+
+  </div>
+<!-- READ ABOUT BANNER -->
+
+
+
+<!-- INDUSTRIES -->
+<div class="industries-wrap">
+  <div class="row industry-row">
+ <div class="flip-card industry col-sm-4">
+   <div class="flip-card-inner industry-inner">
+     <div class="flip-card-front">
+       <div class="industry-icon"><%= image_tag('transportation-image', width: '100%', height: '90%') %></div>
+       <div class="industry-title"><p id='card-title'>Transportation</p></div>
+     </div>
+     <div class="flip-card-back">
+        <p>Unleash the full power of your existing security technology </p>
+     </div>
+   </div>
+ </div>
+
+ <div class="flip-card industry col-sm-4">
+   <div class="flip-card-inner industry-inner">
+     <div class="flip-card-front">
+       <div class="industry-icon"><%= image_tag('industrial-image', width: '100%', height: '90%') %></div>
+       <div class="industry-title"><p id='card-title'>Industrial</p></div>
+     </div>
+     <div class="flip-card-back">
+       <p>Augmented Reality Site Security</p>
+     </div>
+   </div>
+ </div>
+
+ <div class="flip-card industry col-sm-4">
+   <div class="flip-card-inner industry-inner">
+     <div class="flip-card-front">
+       <div class="industry-icon"><%= image_tag('banking-image', width: '100%', height: '90%') %></div>
+       <div class="industry-title"><p id='card-title'>Banking & Finance</p></div>
+     </div>
+     <div class="flip-card-back">
+        <p>See through walls & around corners</p>
+     </div>
+   </div>
+ </div>
+
+ <div class="flip-card industry col-sm-4">
+   <div class="flip-card-inner industry-inner">
+     <div class="flip-card-front">
+       <div class="industry-icon"><%= image_tag('commercial-image', width: '100%', height: '90%') %></div>
+       <div class="industry-title"><p id='card-title'>Commercial Buildings</p></div>
+     </div>
+     <div class="flip-card-back">
+       <p>Geo-Visual Unified Display</p>
+     </div>
+   </div>
+ </div>
+
+ <div class="flip-card industry col-sm-4">
+   <div class="flip-card-inner industry-inner">
+     <div class="flip-card-front">
+       <div class="industry-icon"><%= image_tag('energy-image', width: '100%', height: '90%') %></div>
+       <div class="industry-title"><p id='card-title'>Energy</p></div>
+     </div>
+     <div class="flip-card-back">
+       <p>Actionable Situational Awareness</p>
+     </div>
+   </div>
+ </div>
+
+ <div class="flip-card industry col-sm-4">
+   <div class="flip-card-inner industry-inner">
+     <div class="flip-card-front">
+       <div class="industry-icon"><%= image_tag('hospitality-image', width: '100%', height: '90%') %></div>
+       <div class="industry-title"><p id='card-title'>Hospitality</p></div>
+     </div>
+     <div class="flip-card-back">
+      <p>Accelerated Proactive response</p>
+     </div>
+   </div>
+ </div>
+
+ <div class="flip-card industry col-sm-4">
+   <div class="flip-card-inner industry-inner">
+     <div class="flip-card-front">
+       <div class="industry-icon"><%= image_tag('government-image', width: '100%', height: '90%') %></div>
+       <div class="industry-title"><p id='card-title'>Government & Defense</p></div>
+     </div>
+     <div class="flip-card-back">
+        <p>not given</p>
+     </div>
+   </div>
+ </div>
+
+ <div class="flip-card industry col-sm-4">
+   <div class="flip-card-inner industry-inner">
+     <div class="flip-card-front">
+       <div class="industry-icon"><%= image_tag('medical-image', width: '100%', height: '90%') %></div>
+       <div class="industry-title"><p id='card-title'>Medical</p></div>
+     </div>
+     <div class="flip-card-back">
+        <p>Low cost & Qualified for FEMA grants </p>
+     </div>
+   </div>
+ </div>
+
+ <div class="flip-card industry col-sm-4">
+   <div class="flip-card-inner industry-inner">
+     <div class="flip-card-front">
+       <div class="industry-icon"><%= image_tag('education-image', width: '100%', height: '90%') %></div>
+       <div class="industry-title"><p id='card-title'>Education</p></div>
+     </div>
+     <div class="flip-card-back">
+      <p>not given</p>
+     </div>
+   </div>
+ </div>
+  </div>
+</div>
+<!-- INDUSTRIES -->
+ </div>
+
+
+
+ <div class="footer">
+   <div class="footer-inner">
+     <div class="follow-us-bar">
+        <p id='sub-header'>Follow Us</p>
+        <div class="follow-social-networks">
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-youtube-square"></i>
+          <i class="fab fa-instagram"></i>
         </div>
      </div>
-    </div>
+     <div class="contact-us-wrap">
+       <div class="contact-us-text"><p>Contact Us</p></div>
+       <div class="cotact-info">
+         <p id='sub-header'>800 890 8989</p>
+         <p id='sub-header'>480 329 4705</p>
+         <p id='sub-header'>info@jedeye.com</p>
+       </div>
+     </div>
+   </div>
+ </div>
+
+
+
+
+
+
+
+
+
+
 
 
