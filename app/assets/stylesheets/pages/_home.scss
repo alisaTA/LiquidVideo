@@ -102,16 +102,10 @@
 
 
 .read-about-banner{
-  width: 90%;
+  width: 100%;
   text-align: left;
   margin: 50px 0px;
-  padding: 0 10% 0 10%;
-
-   .effect1{
-    -webkit-box-shadow: 0 10px 6px -6px #777;
-       -moz-box-shadow: 0 10px 6px -6px #777;
-            box-shadow: 0 10px 6px -6px #777;
-}
+  padding: 0 10% 5% 10%;
 
   #header {
     color: footer-blue;
