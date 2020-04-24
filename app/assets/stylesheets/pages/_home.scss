@@ -30,12 +30,12 @@
   text-shadow: 2px 2px 2px #000;
 }
 
-h3 {
-  // font-family: 'Montserrat', sans-serif;
-  padding-top: 30px;
-  font-size: 23px;
-  text-shadow: 2px 2px 2px #000;
-}
+  h3 {
+    // font-family: 'Montserrat', sans-serif;
+    padding-top: 30px;
+    font-size: 23px;
+    text-shadow: 2px 2px 2px #000;
+  }
 }
 
 .welcome-text{
@@ -102,10 +102,23 @@ h3 {
 
 
 .read-about-banner{
-  width: 100%;
+  width: 90%;
   text-align: left;
   margin: 50px 0px;
   padding: 0 10% 0 10%;
+
+   .effect1{
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+}
+
+  #header {
+    color: footer-blue;
+  }
+  // p {
+  //   font-size: 16px;
+  // }
 }
 
 
