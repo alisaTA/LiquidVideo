@@ -8,7 +8,7 @@ let handleAutoPlay = (video) => {
 }
 
 let togglePlay = (video) => {
-  video.click();
+  video.play();
 }
 
 
