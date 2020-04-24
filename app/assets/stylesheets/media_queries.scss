@@ -1,5 +1,49 @@
+@media only screen and (max-width: 850px) {
+  .home-banner > .banner-title {
+    margin-top: 50px;
+    padding-top: 0px;
+  }
 
-@media only screen and (max-width: 600px) {
+  .home-banner > .banner-title h1 {
+    margin-top: 50px;
+    font-size: 40px;
+  }
+
+  .home-banner > .banner-title h3 {
+    font-size: 16px;
+  } 
+  // 
+  .intro-text-wrap > .intro-text-inner > #title-sub-header {
+    font-size: 26px;
+  }
+
+  // 
+  .feature-circle-wrap {
+    height: 600px;
+  }
+
+  // 
+  .read-about-banner #header {
+    font-size: 26px;
+  }
+
+  .read-about-banner p {
+    font-size: 18px;
+  }
+  // 
+  #card-title{
+    font-size: 14px !important;
+  }
+
+  .flip-card-back{
+    padding: 30px;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 700px) {
   .home-banner > .banner-title {
     margin-top: 25px;
     padding-top: 0px;
@@ -35,6 +79,14 @@
   // 
   .industries-wrap {
     margin-top: 85px;
+  }
+
+  .industry{
+    width: 100% !important;
+  }
+
+  #card-title{
+    font-size: 14px !important;
   }
 
   // 
