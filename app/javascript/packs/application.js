@@ -19,9 +19,10 @@
 import 'stylesheets/application'
 
 import setModalListener  from '../openModal';
-console.log('Hello World from Webpacker')
+import initAutoPlay from '../mobileAutoPlay';
+
 
 
 window.onload = setModalListener('#contactMe', '#contactModal');
 window.onload = setModalListener('#xOutIcon', '#contactModal');
-
+window.onload = initAutoPlay('#home-video');
