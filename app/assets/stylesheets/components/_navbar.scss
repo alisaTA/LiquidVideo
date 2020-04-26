@@ -1,3 +1,7 @@
+.navbar-container {
+  background: white;
+}
+
 .navbar-lewagon {
   justify-content: space-between;
   background: white;
@@ -9,4 +13,10 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+.navbar-company {
+  font-size: 24px;
+  color: footer-blue;
+  padding-right: 2%;
 }
