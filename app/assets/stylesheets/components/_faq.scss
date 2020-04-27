@@ -1,0 +1,12 @@
+#contactModal{
+  height: 0px;
+  transition: height 2s;
+}
+
+.modalVisible{
+  height: 750px;
+}
+
+#xOutIcon{
+  cursor: pointer;
+}
