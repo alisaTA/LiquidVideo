@@ -1,4 +1,4 @@
-#contactModal{
+#faqModal{
   height: 0px;
   transition: height 2s;
 }
@@ -9,4 +9,33 @@
 
 #xOutIcon{
   cursor: pointer;
+}
+
+.faq-card-wrap{
+  position: relative;
+  height: 800px;
+  padding: 25px;
+  border: 1px solid;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  line-height: 24px;
+  height: 550px;
+
+  i{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+   .faq-content-wrap{
+    height: 25%;
+  }
+
+  .faq-row{
+    display: flex;
+    flex-direction: row;
+  }
 }
