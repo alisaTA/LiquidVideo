@@ -33,6 +33,10 @@
   </nav>
 </div>
 
+<div id='faqModal'  data-visible='false' style="z-index: 99; position: fixed; top: 10px;width: 100%;height: 0px; display: none">
+  <%= render 'queries/faq', query: @query %>
+</div>
+
 <div id='contactModal'  data-visible='false' style="z-index: 99; position: fixed; top: 10px;width: 100%;height: 0px; display: none">
   <%= render 'queries/form', query: @query %>
 </div>
@@ -50,6 +54,98 @@
     </video>
   </div>
   <!-- VIDEOPLAYER -->
+
+  <!-- BENEFITS -->
+  <div class="read-about-banner">
+     <p id='header'>Benefits</p>
+    <!-- <h2>Advantages</h3> -->
+     <!-- <p>Save a life, save a world. Every life is precious.</p> -->
+
+    <!--  <p>Our software is based on decades of experience with real-life threats to entire communities. It dramatically lowers response time and offers a solution in real-time and 3D providing spatial context and geo-visual unifed display which provides actionable situational awareness for an accelerated proactive response for entering a threatened faclity.</p>
+
+     <p>We strive to create, enable and empower first responders and local guards to ‘see’ their environments thoroughly - through walls and around corners - to dramatically reduce response time, reduce risk and save lives.</p>
+ -->
+    <p> Liquid Video uses your existing surveillance equipment to:</p>
+    <ul>
+      <li>Provide virtual 3D patrol experience of your property from anywhere.</li>
+      <li>Make your control room fully portable and shareable on secure tablets.</li>
+      <li>Enable emergency responders to take immediate action without building plans or prior knowledge of the property layout.</li>
+      <li>Reduce security costs by increasing personnel flexibility.</li>
+    </ul>
+
+   <!--  <p>For First Responders:</p>
+    <ul>
+      <li>substantially reduces risk to emergency personnel by reducing unknowns</li>
+      <li>eliminates need for site or building plans</li>
+      <li>no prior knowledge of building needed for immediate & decisive action</li>
+      <li>video content displayed in full context & is auto-oriented to the responder</li>
+      <li>reduces collateral damage and shut down time, reducing man hours</li>
+    </ul> -->
+
+  </div>
+<!-- BENEFITS -->
+
+  <!-- ENDORSEMENTS -->
+  <div class="endorse-container">
+    <div class="endorse-card">
+      <div class="endorse-photo"><%= image_tag('ken-davidson', width: '100%', height: '100%') %>
+      </div>
+      <div class="endorse-card-content">
+        <div class="endorse-name">
+          <h4>Kenneth A. Davidson - Former Executive Director at Temple Oheb Shalom in Baltimore, Maryland.</h4>
+        </div>
+        <div class="endorse-content">
+          <div class="endorse-quote">
+            <h3>"The system significantly increases the coverage of our existing systems and enables us to secure more area without increasing our staff."</h3>
+          </div>
+          <div class="endorse-logo"><%= image_tag('tos', width: '100%', height: '100%') %>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="endorse-card">
+      <div class="endorse-photo"><%= image_tag('neil-davis', width: '100%', height: '100%') %>
+        <img src="" alt="">
+      </div>
+      <div class="endorse-card-content">
+        <div class="endorse-name">
+          <h4>Neil Davis -Former Sr. Director, Entrepreneurial Initiatives at TEDCO, the Maryland Technology Development Corporation.</h4>
+        </div>
+        <div class="endorse-content">
+          <div class="endorse-quote">
+            <h3>"It's the most innovative video surveillance product brought to market in the past ten years."</h3>
+          </div>
+          <div class="endorse-logo"><%= image_tag('tedco', width: '100%', height: '100%') %>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="endorse-card">
+      <div class="endorse-photo">
+        <%= image_tag('mike-mackesy', width: '100%', height: '100%') %>
+
+      </div>
+      <div class="endorse-card-content">
+        <div class="endorse-name">
+          <h4>Michael J. Mackesy - Senior Consultant at UNICOM Government Inc.</h4>
+        </div>
+        <div class="endorse-content">
+          <div class="endorse-quote">
+            <h3>"The product is so unique and forward-thinking - one would swear it is something out of the movie studios."</h3>
+          </div>
+          <div class="endorse-logo"><%= image_tag('unicom', width: '100%', height: '100%') %>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- ENDORSEMENTS -->
 
  <div class="info-container">
   <!-- INTRO TEXT -->
@@ -70,35 +166,7 @@
   <!-- FEATURE CIRCLE -->
 
 
-<!-- READ ABOUT BANNER -->
-  <div class="read-about-banner">
-     <p id='header'>Advantages</p>
-    <!-- <h2>Advantages</h3> -->
-     <p>Save a life, save a world. <!-- Every life is precious. --></p>
 
-    <!--  <p>Our software is based on decades of experience with real-life threats to entire communities. It dramatically lowers response time and offers a solution in real-time and 3D providing spatial context and geo-visual unifed display which provides actionable situational awareness for an accelerated proactive response for entering a threatened faclity.</p>
-
-     <p>We strive to create, enable and empower first responders and local guards to ‘see’ their environments thoroughly - through walls and around corners - to dramatically reduce response time, reduce risk and save lives.</p>
- -->
-    <p> For the site owner:</p>
-    <ul>
-      <li>‘bolts’ onto the existing security system</li>
-      <li>low cost, highly effective</li>
-      <li>qualified procurement through FEMA grants</li>
-      <li>allows for faster return to normal operations thereby minimizing business interruptions</li>
-    </ul>
-
-    <p>For First Responders:</p>
-    <ul>
-      <li>substantially reduces risk to emergency personnel by reducing unknowns</li>
-      <li>eliminates need for site or building plans</li>
-      <li>no prior knowledge of building needed for immediate & decisive action</li>
-      <li>video content displayed in full context & is auto-oriented to the responder</li>
-      <li>reduces collateral damage and shut down time, reducing man hours</li>
-    </ul>
-
-  </div>
-<!-- READ ABOUT BANNER -->
 
 
 
