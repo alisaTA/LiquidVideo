@@ -17,8 +17,69 @@
   </head>
 
   <body>
+    <div class="navbar-container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-company" href="#">LiquidVideo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <!-- <li class="nav-item active">
+              <a class="nav-link" href="#">Features<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sectors</a>
+            </li> -->
+            <li class="nav-item">
+            <% title, path = request.path == '/faq' ? ['Home', '/'] : ['FAQ', '/faq'] %>
+              <a class="nav-link" href="<%= path %>"><%= title %></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id='contactMe'>Contact</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown link
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li> -->
+          </ul>
+        </div>
+      </nav>
+    </div>
 
+    
     <%= yield %>
+
+    <div class="footer">
+      <div class="footer-inner">
+        <div class="follow-us-bar">
+           <p id='sub-header'>Follow Us</p>
+           <div class="follow-social-networks">
+             <i class="fa fa-twitter-square"></i>
+             <i class="fa fa-facebook"></i>
+             <i class="fa fa-youtube-square"></i>
+             <i class="fa fa-linkedin"></i>
+           </div>
+        </div>
+        <div class="contact-us-wrap">
+          <div class="contact-us-text"><p>Contact Us</p></div>
+          <div class="cotact-info">
+            <!-- <p id='sub-header'>800 890 8989</p> -->
+            <p id='sub-header'>480 329 4705</p>
+            <p id='sub-header'>contact@liquidvideo360.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
     <%= javascript_pack_tag 'application' %>
   </body>
 </html>

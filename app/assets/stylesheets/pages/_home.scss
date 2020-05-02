@@ -4,6 +4,12 @@
 
 }
 
+#section-header{
+  font-size: 35px;
+  font-weight: 600;
+  color: $footer-blue;
+}
+
 .background-videoplayer video {
   right: 0;
   bottom: 0;
@@ -55,14 +61,14 @@
   border-radius: 2px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   // border: 1px blue solid;
-  margin: 10px 0 10px 0;
+  margin: 25px 0 10px 0;
   // padding: 3px 10px 10px 35px;
   height: 175px;
   // align-items: center;
   // flex-direction: row;
 }
 
-endorse-card img {
+.endorse-card img {
   overflow: hidden;
   height: 100%;
   width: 150px;
@@ -72,7 +78,7 @@ endorse-card img {
 .endorse-photo {
   height: inherit;
   // border: 2px red solid;
-  width: 150px !important;
+  min-width: 150px !important;
   img{
     vertical-align: middle;
     height: 100%;
@@ -85,21 +91,22 @@ endorse-card img {
 .endorse-card-content {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   // border: 2px purple solid;
 
   h3 {
-    font-size: 24px;
-    font-weight: light;
+    font-size: 22px;
+    font-weight: 300;
   }
 
   h4 {
-    font-style: bold;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: normal;
   }
 }
 
 .endorse-name {
-  padding: 8px 8px 0 8px;
+  padding: 8px 8px 0 15px;
   // border: 2px green solid;
 }
 
@@ -110,21 +117,19 @@ endorse-card img {
 }
 
 .endorse-quote {
-  padding: 8px 8px 0 8px;
+  padding: 8px 8px 0 15px;
   // border: 2px orange solid;
 }
 
 .endorse-logo {
   // border: 2px yellow solid;
-  width: 250px;
-  img{
-    object-fit: fill;
-  }
+  height: 100%;
+  min-width: 250px;
+  // img{
+  //   object-fit: fill;
+  // }
 }
 
-.endorse-logo img {
-  object-fit: fill;
-}
 
 .welcome-text{
   position: absolute;
@@ -195,21 +200,25 @@ endorse-card img {
   text-align: left;
   margin: 50px 0px;
   padding: 0 8% 1% 8%;
+  font-weight: 300;
+  line-height: 1.9;
 
   #header {
-    color: footer-blue;
+    color: $footer-blue;
+    padding-bottom: 25px;
   }
   p {
-    font-size: 24px;
+    font-size: 24px !important;
   }
   li {
-    font-size: 24px;
+    font-size: 24px !important;
+  }
+  h6{
+    font-size: 35px !important;
   }
 }
 
-#header {
-  color: 1D49BA;
-}
+
 
 
 .industries-wrap{

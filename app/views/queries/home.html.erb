@@ -1,41 +1,7 @@
-<div class="navbar-container">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-company" href="#">LiquidVideo</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <!-- <li class="nav-item active">
-          <a class="nav-link" href="#">Features<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Sectors</a>
-        </li> -->
-        <li class="nav-item">
-          <a class="nav-link" href="#">FAQ</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id='contactMe'>Contact</a>
-        </li>
-        <!-- <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown link
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li> -->
-      </ul>
-    </div>
-  </nav>
-</div>
 
-<div id='faqModal'  data-visible='false' style="z-index: 99; position: fixed; top: 10px;width: 100%;height: 0px; display: none">
-  <%= render 'queries/faq', query: @query %>
-</div>
+<!-- <div id='faqModal'  data-visible='false' style="z-index: 99; position: fixed; top: 10px;width: 100%;height: 0px; display: none">
+  <%# render 'queries/faq', query: @query %>
+</div> -->
 
 <div id='contactModal'  data-visible='false' style="z-index: 99; position: fixed; top: 10px;width: 100%;height: 0px; display: none">
   <%= render 'queries/form', query: @query %>
@@ -57,7 +23,7 @@
 
   <!-- BENEFITS -->
   <div class="read-about-banner">
-     <p id='header'>Benefits</p>
+      <div id='section-header'><p>Benefits</p></div>
     <!-- <h2>Advantages</h3> -->
      <!-- <p>Save a life, save a world. Every life is precious.</p> -->
 
@@ -65,12 +31,12 @@
 
      <p>We strive to create, enable and empower first responders and local guards to ‘see’ their environments thoroughly - through walls and around corners - to dramatically reduce response time, reduce risk and save lives.</p>
  -->
-    <p> Liquid Video uses your existing surveillance equipment to:</p>
+    <p> Liquid Video ‘bolts’ onto  your existing surveillance equipment to:</p>
     <ul>
       <li>Provide virtual 3D patrol experience of your property from anywhere.</li>
       <li>Make your control room fully portable and shareable on secure tablets.</li>
-      <li>Enable emergency responders to take immediate action without building plans or prior knowledge of the property layout.</li>
-      <li>Reduce security costs by increasing personnel flexibility.</li>
+      <li>Enable emergency responders and local guards to take immediate action without building plans or prior knowledge of the property layout</li>
+      <li>Reduce security costs by increasing personnel flexibility</li>
     </ul>
 
    <!--  <p>For First Responders:</p>
@@ -87,6 +53,7 @@
 
   <!-- ENDORSEMENTS -->
   <div class="endorse-container">
+    <div id='section-header'><p>Endorsements</p></div>
     <div class="endorse-card">
       <div class="endorse-photo"><%= image_tag('ken-davidson', width: '100%', height: '100%') %>
       </div>
@@ -283,30 +250,6 @@
   </div>
 </div> -->
 <!-- INDUSTRIES -->
- </div>
-
-
-
- <div class="footer">
-   <div class="footer-inner">
-     <div class="follow-us-bar">
-        <p id='sub-header'>Follow Us</p>
-        <div class="follow-social-networks">
-          <i class="fa fa-twitter-square"></i>
-          <i class="fa fa-facebook"></i>
-          <i class="fa fa-youtube-square"></i>
-          <i class="fa fa-linkedin"></i>
-        </div>
-     </div>
-     <div class="contact-us-wrap">
-       <div class="contact-us-text"><p>Contact Us</p></div>
-       <div class="cotact-info">
-         <!-- <p id='sub-header'>800 890 8989</p> -->
-         <p id='sub-header'>480 329 4705</p>
-         <p id='sub-header'>contact@liquidvideo360.com</p>
-       </div>
-     </div>
-   </div>
  </div>
 
 

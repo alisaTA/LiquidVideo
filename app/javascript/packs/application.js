@@ -20,9 +20,12 @@ import 'stylesheets/application'
 
 import setModalListener  from '../openModal';
 import initAutoPlay from '../mobileAutoPlay';
+import setNavListener from '../navListener';
 
 
 
-window.onload = setModalListener('#contactMe', '#contactModal');
-window.onload = setModalListener('#xOutIcon', '#contactModal');
-window.onload = initAutoPlay('#home-video');
+
+  setModalListener('#contactModal', '#contactMe', '#xOutIcon')
+  initAutoPlay('#home-video');
+  setNavListener('.navbar-toggler');
+

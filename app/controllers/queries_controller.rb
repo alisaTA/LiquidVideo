@@ -16,6 +16,10 @@ class QueriesController < ApplicationController
     render json: {code: params[:code]}
   end
 
+  def faq
+    @query = Query.new
+  end
+
 
   private
 

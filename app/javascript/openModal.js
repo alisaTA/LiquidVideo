@@ -37,12 +37,19 @@ const handleModal = (id) => {
   }
 }
 
-const setModalListener = (contactButton, id) => {
-  let button = findElement(contactButton);
+const addListener = (elem, id) => {
+  let button = findElement(elem);
   if (button) {
     button.onclick = () => handleModal(id);
 
   }
+}
+
+const setModalListener = (id, ...contactButtons) => {
+  contactButtons.forEach((name) => {
+    addListener(name, id)
+  })
+
 }
 
 

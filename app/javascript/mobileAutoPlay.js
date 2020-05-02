@@ -1,7 +1,6 @@
 let handleAutoPlay = (video) => {
   let handler = () => {
     togglePlay(video);
-    console.log('video', video);
     window.removeEventListener('touchstart', handler);
   }
   window.addEventListener('touchstart', handler);
