@@ -56,6 +56,7 @@
 
 .endorse-card {
   display:flex;
+  overflow: hidden;
   // align-items: center;
   // align-content: flex-start;
   background: white;
@@ -73,13 +74,14 @@
   overflow: hidden;
   height: 100%;
   width: 150px;
-  object-fit: fit;
+  object-fit: contain;
 }
 
 .endorse-photo {
   height: inherit;
   // border: 2px red solid;
   min-width: 150px !important;
+  max-width: 150px !important;
   img{
     vertical-align: middle;
     height: 100%;
@@ -96,7 +98,7 @@
   // border: 2px purple solid;
 
   h3 {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 300;
   }
 
@@ -115,6 +117,7 @@
   display: flex;
   flex-direction: row;
   align-items: flex-end;
+  height: 50%;
 }
 
 .endorse-quote {
