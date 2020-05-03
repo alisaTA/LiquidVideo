@@ -13,8 +13,10 @@ const toggleVisibility = (modal, makeVisible) => {
 
 
 const constrainWindow = (fullWindow) => {
+  let darkBack = document.querySelector('.dark-back');
   let body = document.querySelector('body');
   body.style.overflow = fullWindow;
+  darkBack.classList.toggle('active-background')
 }
 
 
@@ -41,7 +43,6 @@ const addListener = (elem, id) => {
   let button = findElement(elem);
   if (button) {
     button.onclick = () => handleModal(id);
-
   }
 }
 
