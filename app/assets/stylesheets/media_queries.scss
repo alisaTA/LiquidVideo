@@ -155,7 +155,8 @@
   }
 
   .endorse-photo img {
-    object-fit: initial;
+    object-fit: cover;
+    background-position: center;
   }
 
   .endorse-card-content{
