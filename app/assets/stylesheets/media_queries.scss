@@ -1,4 +1,7 @@
 @media only screen and (max-width: 850px) {
+  body{
+    background: blue;
+  }
   .home-banner > .banner-title {
     margin-top: 50px;
     padding-top: 0px;
@@ -40,32 +43,63 @@
   }
 
 
-  // endorsements
-  .endorse-card-content h4{
-    font-size: 14px;
-    font-weight: normal;
-    align-items: flex-start;
-  }
 
-  .endorse-card-content h3{
-    font-size: 18px;
-    font-weight: 300;
-  }
+  // .endorse-card-content h4{
+  //   font-size: 14px;
+  //   font-weight: normal;
+  //   align-items: flex-start;
+  // }
 
-  .endorse-logo img{
-    overflow: hidden;
-    height: 100%;
-    width: 50%;
-    object-fit: contain;
-    float: right;
-  }
+  // .endorse-card-content h3{
+  //   font-size: 18px;
+  //   font-weight: 300;
+  // }
 
+  // .endorse-logo img{
+  //   overflow: hidden;
+  //   height: 100%;
+  //   width: 50%;
+  //   object-fit: contain;
+  //   float: right;
+  // }
+
+
+  // .endorse-photo{
+  //   position: absolute;
+  //   top: 0px;
+  //   bottom: 50%;
+  // }
+
+  // .endorse-photo img{
+  //   height: 150%;
+  // }
+
+  // .endorse-name{
+  //   position: absolute;
+  //   left: 25%;
+  // }
+
+  // .endorse-quote{
+  //   position: absolute;
+  //   bottom: 55px;
+  //   left: 0;
+  // }
+
+  // .endorse-quote h3{
+  //   font-size: 28px;
+  // }
+
+  // .endorse-logo{
+  //   position: absolute;
+  //   right: 0;
+  //   bottom: 12%;
+  // }
 
 }
 
 
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 750px)  {
   .home-banner > .banner-title {
     margin-top: 25px;
     padding-top: 0px;
@@ -145,28 +179,42 @@
     border-radius: 2px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     margin: 25px 0 10px 0;
-    height: 400px;
+    height: 90vh;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    position: relative;
+    overflow: hidden;
   }
 
   .endorse-photo{
-    height: 25%;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 25px;
+    min-height: 30%;
+    max-height: 30%;
   }
 
   .endorse-photo img {
-    object-fit: cover;
-    background-position: center;
+    // object-fit: cover;
+    // background-position: center;
+    position: absolute;
+    top: 10px;
+    max-height: 30%;
+    object-fit: contain;
+    left: 0%;
+    min-height: 30%;
   }
 
   .endorse-card-content{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 8px;
+    padding-top: 50px;
   }
 
   .endorse-card-content h4{
-    font-size: 10px;
+    font-size: 20px;
     font-weight: normal;
     align-items: flex-start;
   }
@@ -174,6 +222,7 @@
   .endorse-card-content h3{
     font-size: 18px;
     font-weight: 300;
+
   }
 
   .endorse-name{
@@ -191,14 +240,13 @@
 
   .endorse-logo{
     width: 100%;
-    height: 80px;
-    padding-right: 25px;
+    padding-right: 50px;
   }
 
   .endorse-logo img{
     overflow: hidden;
     height: 100%;
-    width: 50%;
+    width: 80%;
     object-fit: contain;
     float: right;
   }
@@ -239,5 +287,158 @@
   .faq-card-wrap{
     margin: 0px !important;
   }
+}
+
+
+@media only screen and (max-width: 400px) {
+  // endorsements
+
+  #section-header{
+    font-size: 16px !important;
+  }
+
+  .endorse-card{
+    display: flex;
+    background: white;
+    border-radius: 2px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    margin: 25px 0 10px 0;
+    height: 90vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .endorse-photo{
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 25px;
+    min-height: 30%;
+    max-height: 30%;
+  }
+
+  .endorse-photo img {
+    // object-fit: cover;
+    // background-position: center;
+    position: absolute;
+    top: 10px;
+    max-height: 30%;
+    object-fit: contain;
+    left: 0%;
+    min-height: 30%;
+  }
+
+  .endorse-card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    // padding: 8px;
+    // padding-top: 50px;
+    max-height: 100%;
+    padding-top: 0px !important;
+  }
+
+  .endorse-card-content h4{
+    font-size: 20px;
+    font-weight: normal;
+    align-items: flex-start;
+  }
+
+  .endorse-card-content h3{
+    font-size: 18px;
+    font-weight: 300;
+
+  }
+
+  .endorse-name{
+    align-content: flex-start;
+  }
+
+  .endorse-content{
+    flex-direction: column;
+  }
+  
+  .endorse-quote{
+    padding: 30px 8px 0 15px;
+    height: 150px;
+  }
+
+  .endorse-logo{
+    width: 100%;
+    padding-right: 50px;
+  }
+
+  .endorse-logo img{
+    overflow: hidden;
+    height: 100%;
+    width: 80%;
+    object-fit: contain;
+    float: right;
+  }
+}
+
+
+
+@media only screen and (max-width: 750px) and (orientation: landscape) {
+
+.endorse-card-content h4{
+  font-size: 18px;
+  font-weight: normal;
+  align-items: flex-start;
+}
+
+.endorse-card-content h3{
+  font-size: 18px;
+  font-weight: 300;
+  padding-top: 40px;
+}
+
+.endorse-logo img{
+  overflow: hidden;
+  height: 100%;
+  object-fit: contain;
+  float: right;
+  width: 30%;
+}
+
+
+.endorse-photo{
+  position: absolute;
+  top: 0px;
+  bottom: 50%;
+  min-height: 150% !important;
+  max-height: 150% !important;
+}
+
+.endorse-photo img{
+  height: 150%;
+}
+
+.endorse-name{
+  position: absolute;
+  left: 25%;
+  top: 25px;
+}
+
+.endorse-quote{
+  position: absolute;
+  bottom: 55px;
+  left: 0;
+}
+
+.endorse-quote h3{
+  font-size: 24px;
+}
+
+.endorse-logo{
+  position: absolute;
+  right: 0;
+  bottom: 12%;
+}
 
 }
+
+
+
+
