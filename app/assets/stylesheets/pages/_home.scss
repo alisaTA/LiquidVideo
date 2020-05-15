@@ -99,7 +99,7 @@
     margin: 18px 40px;
     height: 68%;
     width: 65%;
-    object-fit: fill;
+    // object-fit: unset;
     // object-fit: contain;
   }
 }
@@ -116,10 +116,11 @@
     font-weight: normal;
     line-height: 26px;
     color: #5A5A5A;
-    letter-spacing: 0.005em;
+    // letter-spacing: 0.005em;
   }
 
   h4 {
+    padding-top: 20px;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -128,6 +129,7 @@
   }
   h5 {
     font-size: 17px;
+    font-weight: normal;
     line-height: 20px;
     color: #2B2B2B;
 
@@ -153,8 +155,17 @@
 .endorse-logo {
   display: flex;
   height: 100%;
-  min-width: 200px;
-  align-content: flex-end;
+  min-width: 180px;
+  // align-content: flex-end;
+  align-items: center;
+  img{
+    vertical-align: middle;
+    align-items: center;
+    padding: 6px 12px;
+    // height: 68%;
+    // width: 65%;
+    // object-fit: fill;
+  }
 }
 
 
@@ -297,5 +308,23 @@
 
   img{
     object-fit: fill;
+  }
+}
+
+.statement-wrap {
+  display: flex;
+  justify-content: center;
+}
+.statement {
+  align-content: center;
+  padding: 130px 0 130px 0;
+  display: flex;
+  color: #303030;
+  h1{
+   font-family: Source Sans Pro;
+    // font-style: bolder;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
   }
 }
