@@ -78,7 +78,7 @@
   text-align: center;
   border-radius: 8px;
   background-color:#48B9D2;
-  font-family: Source Sans Pro;
+  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -134,6 +134,7 @@
 // }
 
 .endorse-container {
+  font-family: 'Roboto', sans-serif;
   // padding-top: 20px 20px;
   // margin: 0 6% 0 6%;
   padding: 5% 10% 5% 10%;
@@ -162,7 +163,7 @@
   box-sizing: border-box;
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.03);
   // box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  height: 186px;
+  height: 190px;
   margin: 12px 0;
 }
 
@@ -179,13 +180,13 @@
   justify-content: center;
   height: inherit;
   // border: 2px red solid;
-  min-width: 230px !important;
-  max-width: 230px !important;
+  min-width: 200px !important;
+  max-width: 200px !important;
   img{
     border-radius: 50%;
     vertical-align: middle;
     align-items: center;
-    margin: 18px 40px;
+    margin: 18px 29px 18px 40px;
     height: 68%;
     width: 65%;
     // object-fit: unset;
@@ -226,7 +227,7 @@
 }
 
 .endorse-name {
-  padding: 8px 8px 0 15px;
+  padding: 8px 8px 0 0;
   // border: 2px green solid;
 }
 
@@ -238,7 +239,7 @@
 }
 
 .endorse-quote {
-  padding: 4px 4px 0 15px;
+  padding: 4px 52px 0 0;
 }
 
 .endorse-logo {
@@ -287,15 +288,15 @@
 .benefits-banner{
   font-style: normal;
   font-weight: normal;
-  font-size:24px;
+  font-size:20px;
+  line-height: 28px;
   background: #F9F9F9;
   color: #303030;
   width: 100%;
   text-align: left;
   // margin: 50px 0px;
-  padding: 100px 8% 60px 150px;
+  padding: 100px 31% 60px 150px;
   font-weight: 300;
-  line-height: 1.9;
 
   #section-header {
     color: #183B56;
@@ -308,13 +309,23 @@
   // p {
   //   font-size: 24px !important;
   // }
-  // li {
-  //   font-size: 24px !important;
-  // }
+  ul {
+    margin-left: 0;
+    padding-inline-start: 16px;
+  }
+  ul li {
+    font-size:12px;
+    // list-style-type: disc;
+  }
+    li span {
+      font-size: 20px !important;
+      font-weight: 300;
+    }
+  }
   // h6{
   //   font-size: 35px !important;
   // }
-}
+
 
 .experience-text-wrap{
   width: 100%;
@@ -323,10 +334,10 @@
 
   .experience-text-inner{
     color: #303030;
-    padding: 34px 0 34px 0;
+    padding: 34px 9% 34px 0;
     height: 100%;
     display: flex;
-    font-size: 24px;
+    font-size: 22px;
     flex-direction: column;
     align-content: center;
     justify-content: center;
