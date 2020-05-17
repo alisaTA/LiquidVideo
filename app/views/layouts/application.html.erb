@@ -19,7 +19,7 @@
 
   <body>
     <div class="dark-back"></div>
-    <div class="navbar-container">
+    <!-- <div class="navbar-container">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-company" href="#">LiquidVideo</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,12 +27,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
-            <!-- <li class="nav-item active">
-              <a class="nav-link" href="#">Features<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sectors</a>
-            </li> -->
+
             <li class="nav-item">
             <% title, path = request.path == '/faq' ? ['Home', '/'] : ['FAQ', '/faq'] %>
               <a class="nav-link" href="<%= path %>"><%= title %></a>
@@ -40,19 +35,41 @@
             <li class="nav-item">
               <a class="nav-link" id='contactMe'>Contact</a>
             </li>
-            <!-- <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown link
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li> -->
+
           </ul>
         </div>
       </nav>
+    </div> -->
+
+  <div class="navbar-container">
+     <!--  <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
+        <div class="nav-company">
+          <a class="navbar-company" href="#">LiquidVideo</a>
+        </div>
+
+          <ul class="navbar-items">
+
+            <li class="nav-item">
+            <% title, path = request.path == '/vision' ? ['Home', '/'] : ['Vision', '/vision'] %>
+              <a class="nav-link" href="<%= path %>"><%= title %></a>
+            </li>
+            <li class="nav-item">
+            <% title, path = request.path == '/faq' ? ['Home', '/'] : ['FAQ', '/faq'] %>
+              <a class="nav-link" href="<%= path %>"><%= title %></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id='contactMe'>Contact</a>
+            </li>
+            <li class="nav-item">
+              <div class="nav-button">
+            <% title, path = request.path == '/getaquote' ? ['Home', '/'] : ['Get A Quote', '/getaquote'] %>
+              <a class="nav-btn" href="<%= path %>"><%= title %></a>
+              </div>
+            </li>
+
+          </ul>
+        <!-- </div> -->
+      <!-- </nav> -->
     </div>
 
 
