@@ -7,19 +7,27 @@
   <%= render 'queries/form', query: @query %>
 </div>
 
-<div class="home-banner">
+
+
+<div class="home-banner-wrap">
   <div class="banner-title">
     <h1>Get Superhero Vision To Secure Your Property</h1>
     <h3>Liquid Video Software Enables 3D and Virtual X-Ray Vision Capabilities Using Your Existing Security Video Cameras.</h3>
+    <div class="quote-button-box">
+    <%= link_to "Get A Quote", "#", class: "quote-button" %>
+    </div>
   </div>
+  <!-- <div class="vertical-line"></div> -->
   <!-- VIDEOPLAYER -->
-  <div class="background-videoplayer">
-    <video playsinline autoplay loop muted id="home-video">
-      <source src="<%= image_path('liquidVideo_banner_video.mp4')%>" type="video/mp4" />
-        Your browser does not support video
-    </video>
+    <div class="background-videoplayer">
+      <video playsinline autoplay loop muted id="home-video">
+        <source src="<%= image_path('liquidVideo_banner_video.mp4')%>" type="video/mp4" />
+          Your browser does not support video
+      </video>
+    </div>
+  <!-- VIDEOPLAYER -->
   </div>
-  <!-- VIDEOPLAYER -->
+
 
   <!-- BENEFITS -->
   <div class="benefits-banner">
