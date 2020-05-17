@@ -1,22 +1,117 @@
+// .navbar-container {
+//   background: white;
+// }
+
+// .navbar-lewagon {
+//   justify-content: space-between;
+//   background: white;
+// }
+
+// .navbar-lewagon .navbar-collapse {
+//   flex-grow: 0;
+// }
+
+// .navbar-lewagon .navbar-brand img {
+//   width: 40px;
+// }
+
+// .navbar-company {
+//   font-size: 24px;
+//   color: #48B9D2;
+//   padding-right: 2%;
+// }
+
 .navbar-container {
-  background: white;
+  display: flex;
+  background-color: white;
+  flex-direction: row;
+  align-items: baseline;
+  height: 88px;
+  // align-items: baseline;
 }
 
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
-}
+// .navbar-lewagon {
+//   // justify-content: space-between;
+//   background: white;
+//   display: flex;
+//   // flex-direction: row;
+// }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
+// .navbar-lewagon .navbar-collapse {
+//   flex-grow: 0;
+// }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
-}
-
-.navbar-company {
+// .navbar-lewagon .navbar-brand img {
+//   width: 40px;
+// }
+.nav-company {
+  // border: 2px green solid;
   font-size: 24px;
   color: #48B9D2;
-  padding-right: 2%;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: bold;
+  display: flex;
+  padding: 0 42vw 0 145px;
+  // justify-content: baseline;
+  // align-items: flex-end;
+  letter-spacing: 0.04em;
 }
+.navbar-company {
+  display: flex;
+  color: #48B9D2;
+  letter-spacing: 0.04em;
+  line-height: 70px;
+  text-decoration: none;
+  // justify-content: baseline;
+}
+
+.navbar-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #183B56;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  align-items: baseline;
+  padding: 0;
+
+
+}
+.nav-item {
+  color: #183B56;
+  text-decoration: none;
+  padding: 0 43px 0 0;
+}
+.nav-link {
+  text-decoration: none;
+  color: #183B56;
+}
+
+.nav-button {
+  border: 1px solid #48B9D2;
+  box-shadow: 0px 4px 4px rgba(184, 184, 184, 0.25);
+  border-radius: 8px;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 48px;
+  text-align: center;
+  width: 148px;
+  height: 48px;
+  color: #48B9D2;
+  margin: 0 auto;
+
+  .nav-btn {
+    color: #48B9D2;
+    text-decoration: none;
+  }
+}
+
