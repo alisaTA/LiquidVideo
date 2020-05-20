@@ -22,7 +22,7 @@
     height: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around !important;
 
     p:nth-child(1){
       font-size: 12px;
