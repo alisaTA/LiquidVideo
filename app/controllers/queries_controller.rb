@@ -4,11 +4,11 @@ class QueriesController < ApplicationController
   end
 
   def create
-    query = Query.new(strong_params)
-    if query.save
+    @query = Query.new(strong_params)
+    if @query.save
       redirect_to root_path
     else 
-      # render partial form
+      render 'contact'
     end 
   end 
 
@@ -21,9 +21,14 @@ class QueriesController < ApplicationController
   end
 
 
+  def contact
+    @query = Query.new
+  end
+
+
   private
 
   def strong_params
-    params.require(:query).permit(:firstname,:lastname,:email,:company,:phone)
+    params.require(:query).permit(:full_name,:email,:company,:phone)
   end 
 end

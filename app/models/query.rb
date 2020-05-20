@@ -1,8 +1,11 @@
 class Query < ApplicationRecord
   after_create :send_welcome_email_and_add_to_sheets
 
+  validates :full_name, presence: true
 
-
+  def format_name
+    self.full_name.split(' ')
+  end 
 
   private
 
@@ -15,6 +18,7 @@ class Query < ApplicationRecord
 
 
   def format_query_data
-    [self.created_at,self.company, self.firstname, self.lastname, self.email, self.phone]
+    firstname, lastname = self.format_name
+    [self.created_at,self.company, firstname, lastname, self.email, self.phone]
   end 
 end
