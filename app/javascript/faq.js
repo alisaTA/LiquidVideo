@@ -6,8 +6,9 @@ const ToggleFaq = {
   toggle(elem){
     let plus    = elem.target.firstElementChild || elem.target;
     let faqCard = elem.currentTarget;
-    if ( plus  && plus.id === 'plus-icon' ) {  
-      faqCard.classList.toggle('faq-active'); 
+    if ( plus  && plus.id === 'plus-icon' || plus.id === 'minus-icon' ) {  
+      let isActive = faqCard.classList.toggle('faq-active'); 
+      this.toggleCardIcon(isActive, faqCard);
       setTimeout(() => this.handleIntersection(faqCard), 75);
     }
   },
@@ -31,6 +32,18 @@ const ToggleFaq = {
       card.style.cssText = "height: " + newHeight;
     } else {
       card.style.cssText = '';
+    }
+  },
+
+  toggleCardIcon(active, card) {
+    let plusIcon  = card.querySelector('#plus-icon');
+    let minusIcon = card.querySelector('#minus-icon');
+    if ( active ) {
+      plusIcon.style.display = 'none';
+      minusIcon.style.display = '';
+    }else {
+      plusIcon.style.display = '';
+      minusIcon.style.display = 'none';
     }
   }
 }
