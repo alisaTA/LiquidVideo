@@ -29,6 +29,8 @@ class QueriesController < ApplicationController
   private
 
   def strong_params
-    params.require(:query).permit(:full_name,:email,:company,:phone)
+    params.require(:query).permit(:first_name, :last_name, :facility_count, 
+                                  :camera_count,:radar_count, :email,
+                                  :company, :phone)
   end 
 end

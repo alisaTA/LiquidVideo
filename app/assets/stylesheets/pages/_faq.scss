@@ -12,6 +12,7 @@
 // }
 
 .faq-wrap{
+  margin-top: 25px;
     p{
       font-family: Roboto;
       font-style: normal;
@@ -40,7 +41,7 @@
     z-index: 99;
   }
 
-  #plus-icon img{
+  #icons {
     cursor: pointer;
   }
 }

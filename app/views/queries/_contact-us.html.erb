@@ -7,7 +7,8 @@
       <div class="contact-form">
         <div class="contact-form-inner">
           <%= simple_form_for(query) do |f| %>
-          <%= f.input :full_name, placeholder: 'full name'  %>
+          <%= f.input :first_name, placeholder: 'first name'  %>
+          <%= f.input :last_name, placeholder: 'last name'  %>
           <%= f.input :email, placeholder: 'email' %>
           <%= f.input :phone, placeholder: 'phone'  %>
           <%= f.input :company, placeholder: 'company'  %>
