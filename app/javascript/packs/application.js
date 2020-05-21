@@ -21,11 +21,11 @@ import 'stylesheets/application'
 import setModalListener  from '../openModal';
 import initAutoPlay from '../mobileAutoPlay';
 import setNavListener from '../navListener';
-
+import initFaq from '../faq';
 
 
 
   setModalListener('#contactModal', '#contactMe', '#xOutIcon')
   initAutoPlay('#home-video');
   setNavListener('.navbar-toggler');
-
+  initFaq();
