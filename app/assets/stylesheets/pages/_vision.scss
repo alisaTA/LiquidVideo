@@ -1,0 +1,30 @@
+.vision-wrap{
+  height: 500px;
+
+  p {
+    font-family: Roboto;
+  }
+
+  .vision-header{
+    font-weight: 500;
+    font-size: 36px;
+    color: #183B56;
+    padding: 25px 0px;
+  }
+}
+
+.vision-card{
+  height: 300px !important;
+  padding: 80px !important;
+
+  .vision-content{
+    p:nth-child(1) {
+      font-weight: 500;
+    }
+
+    p:nth-child(2) {
+      font-weight: 100;
+      opacity: 0.8;
+    }
+  }
+}
