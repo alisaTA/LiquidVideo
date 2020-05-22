@@ -1,0 +1,78 @@
+<style>
+  .number-field-wrap {
+    padding: 15px;
+  }
+
+  .number-field {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .number-field > label {
+    padding-top: 10px;
+  }
+
+  #qoute-looking-forward {
+    color: #444444;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 35px;
+  }
+</style>
+
+
+<div class="blue-banner" style="background: #08213D;height: 75px;"></div>
+<div class="container">
+  <div class="contact-form-wrap">
+      <div id="contact-us-header">
+        <p style="font-size: 32px;color: #183B56;">Get A Quote</p>
+      </div>
+      <div class="contact-form">
+        <div class="contact-form-inner">
+          <%= simple_form_for(@query) do |f| %>
+          <%= f.hidden_field :form_type, value: 'quote' %>
+          <div class="two-input-row">
+            <%= f.input :first_name, placeholder: 'first name'  %>
+            <%= f.input :last_name, placeholder: 'last name'  %>
+          </div>
+          <%= f.input :email, placeholder: 'email' %>
+          <%= f.input :phone, placeholder: 'phone'  %>
+          <%= f.input :company, placeholder: 'company'  %>
+
+          <div class="number-field-wrap">
+            <div class="number-field">
+              <label for="query_facility_count">Number of facilities</label>
+              <%= f.input :facility_count, label: false%>
+            </div>
+            <div class="number-field">
+              <label for="query_camera_count">Number of cameras/facilities</label>
+              <%= f.input :camera_count, label: false%>
+            </div>
+            <div class="number-field">
+              <label for="query_radar_count">Number of radars/facilities</label>
+              <%= f.input :radar_count, label: false%>
+            </div>
+          </div>
+
+
+          <div class="before-submit-content">
+            <p>
+              By submitting your information, you agree to our use of your information to contact you.
+            </p>
+          </div>
+            
+            <div class="contact-submit-wrap">
+            <%= f.submit 'Submit', id: 'contact-submit' %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+  </div>
+  <div id='qoute-looking-forward'>
+    <p>We look forward to speaking with you!</p>
+  </div>
+</div>
+

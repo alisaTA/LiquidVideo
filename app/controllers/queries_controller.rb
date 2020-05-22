@@ -4,11 +4,12 @@ class QueriesController < ApplicationController
   end
 
   def create
+    form = params['query']['form_type']
     @query = Query.new(strong_params)
     if @query.save
       redirect_to root_path
     else 
-      render 'contact'
+      render form
     end 
   end 
 
@@ -24,6 +25,10 @@ class QueriesController < ApplicationController
   def contact
     @query = Query.new
   end
+
+  def quote
+    @query = Query.new
+  end 
 
 
   private

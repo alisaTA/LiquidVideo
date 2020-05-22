@@ -58,7 +58,7 @@
           </li>
           <li class="nav-item">
             <div class="nav-button">
-              <a class="nav-btn" href="/getaquote">Get A Qoute</a>
+              <a class="nav-btn" href="/get-a-quote">Get A Qoute</a>
             </div>
           </li>
           </ul>
@@ -111,6 +111,7 @@
           let aTagHref = aTag.href.split('/');
           aTagHref     = aTagHref[aTagHref.length - 1];
           path         = path.split('/').join('');
+          if ( path === 'get-a-quote' ) return;
           if ( aTag && aTagHref === path ) {
             aTag.style.borderBottom = '1px solid #08213D';
           }else {
