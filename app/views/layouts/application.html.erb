@@ -46,32 +46,26 @@
         <div class="nav-company">
           <a class="navbar-company" href="/">LiquidVideo</a>
         </div>
-
-          <ul class="navbar-items">
-
-            <li class="nav-item">
-            <% title, path = request.path == '/vision' ? ['Home', '/'] : ['Vision', '/vision'] %>
-              <a class="nav-link" href="<%= path %>"><%= title %></a>
-            </li>
-            <li class="nav-item">
-            <% title, path = request.path == '/faq' ? ['Home', '/'] : ['FAQ', '/faq'] %>
-              <a class="nav-link" href="<%= path %>"><%= title %></a>
-            </li>
-            <li class="nav-item">
-              <!-- <a class="nav-link" id='contactMe'>Contact</a> -->
-              <a class="nav-link" href="/contact-us">Contact</a>
-            </li>
-            <li class="nav-item">
-              <div class="nav-button">
-            <% title, path = request.path == '/getaquote' ? ['Home', '/'] : ['Get A Quote', '/getaquote'] %>
-              <a class="nav-btn" href="<%= path %>"><%= title %></a>
-              </div>
-            </li>
-
+        <ul class="navbar-items">
+          <li class="nav-item">
+            <a class="nav-link" href="/vision">Vision</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/faq">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact-us">Contact</a>
+          </li>
+          <li class="nav-item">
+            <div class="nav-button">
+              <a class="nav-btn" href="/getaquote">Get A Qoute</a>
+            </div>
+          </li>
           </ul>
         <!-- </div> -->
       <!-- </nav> -->
     </div>
+
     <div class="temp-back" style="background-color: #F9F9F9;">
 
       <%= yield %>
