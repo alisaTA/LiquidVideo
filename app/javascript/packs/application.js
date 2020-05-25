@@ -22,10 +22,18 @@ import setModalListener  from '../openModal';
 import initAutoPlay from '../mobileAutoPlay';
 import setNavListener from '../navListener';
 import initFaq from '../faq';
-
+import Nav from '../navScrollToDropdown';
+import smoothScroll from '../smoothScroll';
 
 
   setModalListener('#contactModal', '#contactMe', '#xOutIcon')
   initAutoPlay('#home-video');
   setNavListener('.navbar-toggler');
   initFaq();
+  smoothScroll();
+  Nav.setNavScroll();
+  Nav.scrollOnReload(window.location);
+    
+    
+
+

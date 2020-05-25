@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="contact-form-wrap" style="display: <%= style %>">
+      <div id="contact-us-header">
+        <% if request.fullpath == '/contact-us' %>
+          <p style="font-size: 32px;color: #183B56;">Contact Us</p>
+        <% end %>
+      </div>
+      <div class="contact-form">
+        <div class="contact-form-inner">
+          <%= simple_form_for(@query) do |f| %>
+          <%= f.hidden_field :form_type, value: 'contact' %>
+          <div class="two-input-row">
+            <%= f.input :first_name, placeholder: 'first name'  %>
+            <%= f.input :last_name, placeholder: 'last name'  %>
+          </div>
+          <%= f.input :email, placeholder: 'email' %>
+          <%= f.input :phone, placeholder: 'phone'  %>
+          <%= f.input :company, placeholder: 'company'  %>
+          <div class="before-submit-content" style="height: 225px;">
+            <p>
+              By submitting your information, you agree to our use of your information to contact you.
+            </p>
+            <p>
+              Or call +1-480-329-4705 or email us info@liquidvideo360.com 
+            </p>
+            <p>
+              We look forward to speaking with you!
+            </p>
+          </div>
+            
+            <div class="contact-submit-wrap">
+            <%= f.submit 'Submit', id: 'contact-submit' %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+  </div>
+</div>
