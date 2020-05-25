@@ -27,7 +27,7 @@ const ToggleFaq = {
     boundingCard   = card.getBoundingClientRect()?.bottom;
     offSet         = boundingCard - boundingAnswer; 
     if ( offSet < -80 ) {
-      offSet = Math.floor(-(offSet) + 240);
+      offSet = Math.floor(-(offSet) + 165);
       let newHeight = offSet < 180 ? '180px' : offSet.toString() + 'px !important'
       card.style.cssText = "height: " + newHeight;
     } else {
@@ -36,12 +36,17 @@ const ToggleFaq = {
   },
 
   toggleCardIcon(active, card) {
-    let plusIcon  = card.querySelector('#plus-icon');
-    let minusIcon = card.querySelector('#minus-icon');
+    let plusIcon  = card.querySelector( '#plus-icon' );
+    let minusIcon = card.querySelector( '#minus-icon' );
+    let cWrap     = card.querySelector( '.contact-form-wrap' );
     if ( active ) {
-      plusIcon.style.display = 'none';
+      if ( cWrap && cWrap.style.display === 'none' ) { cWrap.style.display    = ''; }
+      
+      plusIcon.style.display  = 'none';
       minusIcon.style.display = '';
     }else {
+      if ( cWrap && cWrap.style.display === '' ) {  cWrap.style.display    = 'none'; } 
+
       plusIcon.style.display = '';
       minusIcon.style.display = 'none';
     }

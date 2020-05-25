@@ -1,0 +1,41 @@
+ <div class="home-dropdown">
+  <div class="faq-wrap" style="margin-top: 50px;">
+     <div class="faq-card home-dropdown-card">
+       <div class="faq-q" id="vision">
+         <p>Vision</p>
+         <div id="icons vision">
+            <%= image_tag 'plus-icon.png', id: 'plus-icon'%>
+            <%= image_tag 'minus-icon.png', id: 'minus-icon', style: "display: none;" %>
+         </div>
+       </div> 
+     <div class="faq-a">
+      <%= render 'queries/vision' %>
+     </div>
+   </div>
+
+
+     <div class="faq-card home-dropdown-card">
+       <div class="faq-q" id='contact'>
+         <p>Contact Us</p>
+         <div id="icons contact">
+            <%= image_tag 'plus-icon.png', id: 'plus-icon'%>
+            <%= image_tag 'minus-icon.png', id: 'minus-icon', style: "display: none;" %>
+         </div>
+       </div> 
+     <div class="faq-a">
+     <%= render 'queries/contact', style: 'none' %>
+     </div>
+   </div>
+
+     <div class="faq-card home-dropdown-card">
+       <div class="faq-q">
+         <p>Frequently Asked Questions</p>
+         <div id="icons">
+          <%= link_to '/faq' do  %>
+            <%= image_tag 'plus-icon.png'%>
+          <% end %>
+         </div>
+       </div> 
+   </div>
+ </div>
+</div>
