@@ -20,6 +20,7 @@
   .background-videoplayer-mobile {
     height: 100%;
     width: 100%;
+    position: relative;
   }
 
   .background-videoplayer-mobile video{
@@ -64,6 +65,10 @@
   <div class="banner-video-mobile">
   
     <div class="background-videoplayer-mobile">
+      <div class="video-target video-target-top"></div>
+       <div class="video-target video-target-right"></div>
+       <div class="video-target video-target-bottom"></div>
+       <div class="video-target video-target-left"></div>
       <video playsinline autoplay loop muted id="home-video">
         <source src="<%= image_path('liquidVideo_banner_video.mp4')%>" type="video/mp4" />
           Your browser does not support video
