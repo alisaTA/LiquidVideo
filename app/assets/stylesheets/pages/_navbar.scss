@@ -8,8 +8,19 @@
   justify-content: space-between;
   padding: 0px 75px;
 
-  li:last-child{
-    padding-right: 0px;
+  li:last-child{ padding-right: 0px; }
+
+  .nav-link{ transition: 0.25s; }
+  .nav-link:hover { box-shadow: 0px 1px 1px rgba(184,184,184,0.6); }
+
+  .nav-button{
+    transition: .25s ;
+    cursor: pointer;
+  }
+
+  .nav-button:hover{
+    background: #F9F9F9;
+    box-shadow: 2px 4px 4px rgba(184,184,184,0.6);
   }
 
   li a {
