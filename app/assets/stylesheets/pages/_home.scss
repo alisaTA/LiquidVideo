@@ -10,6 +10,7 @@
   height: 600px;
   display: flex;
   flex-direction: row;
+  padding: 100px 75px;
 }
 
 // #section-header{
@@ -23,18 +24,23 @@
 //   color: white;
 // }
 
-.background-videoplayer video {
-  // right: 0;
-  // bottom: 0;
-  // align-items: baseline;
-  // min-width: 70%;
-  // min-height: 70%;
-  // max-height: 70%;
-  // max-width: 70%;
-  // position: absolute;
-  margin: 141px 130px 141px 0;
-  width: 594.36px;
-  height: 317.82px;
+.background-videoplayer  {
+  width: 50%;
+   video { 
+    // right: 0;
+    // bottom: 0;
+    // align-items: baseline;
+    // min-width: 70%;
+    // min-height: 70%;
+    // max-height: 70%;
+    // max-width: 70%;
+    // position: absolute;
+    // margin: 141px 130px 141px 0;
+    margin: 0px;
+    // width: 594.36px;
+    width: 100%;
+    height: auto;
+   }
 }
 
 .banner-title{
@@ -43,7 +49,8 @@
   // left: 4%;
   // top: 10px;
   // margin: 0 auto;
-  padding: 0 145px 0 130px;
+  width: 50%;
+  padding: 0px 50px 0px 0px;
   font-family: 'Roboto', sans-serif;
   color: #F0F0F0;
 
@@ -54,17 +61,20 @@
     line-height: 137.19%;
     /* or 44px */
     text-transform: uppercase;
-    margin-top: 140px;
+    // margin-top: 140px;
     // text-shadow: 2px 2px 2px #000;
 }
 
-  h3 {
-    font-style: normal;
-    font-weight: 300;
+  p {
+    padding: 30px 30px 60px 0;
+    font-family: inherit;
+    font-style: oblique;
+    font-weight: 100;
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 0.04em;
-    padding: 30px 30px 60px 0;
+    color: #F0F0F0;
+    opacity: .8;
     // padding-top: 30px;
     // padding-bottom: 60px;
     // text-shadow: 2px 2px 2px #000;
@@ -411,20 +421,57 @@
   }
 }
 
+
+
+// HOMEDROPDOWN
+    .home-dropdown{
+      .home-dropdown-card{
+        border-radius: 0px !important;
+        border: 0px !important;
+        background: #F9F9F9 !important;
+        height: 150px !important;
+      }
+
+      .faq-q p:nth-child(1) {
+        font-size: 36px;
+        color: #183B56;
+      }
+
+      .faq-card{
+        padding: 50px 135px !important;
+      }
+
+    
+
+      
+      .faq-card{
+        margin: 0px !important;
+      }
+    }
+
+    #icons{
+      cursor: pointer !important;
+    }
+    
+// HOMEDROPDOWN
+
+
+
 .statement-wrap {
   display: flex;
   justify-content: center;
 }
 .statement {
+  height: 315px;
   align-content: center;
   padding: 130px 0 130px 0;
   display: flex;
   color: #303030;
-  h1{
-   font-family: Source Sans Pro;
-    // font-style: bolder;
-    font-weight: 700;
+  p{
+    font-family: inherit;
+    font-weight: bolder;
     font-size: 36px;
     line-height: 45px;
+    color: #08213D;
   }
 }
