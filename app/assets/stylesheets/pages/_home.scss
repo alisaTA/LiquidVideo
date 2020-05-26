@@ -1,37 +1,42 @@
 // Specific CSS for your home-page
-.video-target{
-  background: #FFFFFF; 
-  position: absolute;
-  height: 2px;
-  width: 17px;
+.video-target-wrap{
+  position: relative;
+
+  .video-target{
+    background: #FFFFFF; 
+    position: absolute;
+    height: 2px;
+    width: 17px;
+  }
+
+  .video-target-top{
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: 50%;
+    top: -8%;
+  }
+
+  .video-target-right{
+    bottom: 50%;
+    right: -35px;
+  }
+
+  .video-target-bottom{
+    bottom: -6%;
+    right: 50%;
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+
+  .video-target-left{
+    bottom: 50%;
+    left: -35px;
+  }
 }
 
-.video-target-top{
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-  right: 50%;
-  top: -8%;
-}
-
-.video-target-right{
-  bottom: 55%;
-  right: -35px;
-}
-
-.video-target-bottom{
-  bottom: 8%;
-  right: 50%;
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-
-.video-target-left{
-  bottom: 55%;
-  left: -35px;
-}
 
 .home-banner{
-  position: relative;
+  // position: relative;
 }
 
 .home-banner-wrap {
