@@ -1,0 +1,87 @@
+<style>
+  .home-banner-wrap-mobile{
+    background-color:#08213D;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 150px 30px;
+  }
+
+  .banner-video-mobile{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 100%;
+    /*padding-left: 40px;*/
+    padding: 50px 40px 0px 40px;
+  }
+
+  .background-videoplayer-mobile {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+
+  .background-videoplayer-mobile video{
+    height: 100%;
+    width: 100%;
+  }
+
+  .banner-title-mobile{
+    width: 70%;
+    font-family: 'Roboto', sans-serif;
+    color: #F0F0F0;
+  }
+  
+  .banner-title-mobile h1{
+    text-transform: uppercase;
+    font-size: 32px;
+  }
+
+  .banner-video-mobile p {
+    font-family: inherit;
+    /*font-style: oblique;*/
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    color: #F0F0F0;
+    text-align: left;
+    padding: 50px 135px 20px;
+  }
+
+  .quote-mobile{
+    margin: 0 auto;
+  }
+
+</style>
+
+
+<div class="home-banner-wrap-mobile">
+  <div class="banner-title-mobile">
+    <h1>Get Superhero Vision To Secure Your Property</h1>
+  </div>
+  <div class="banner-video-mobile">
+  
+    <div class="background-videoplayer-mobile">
+      <div class="video-target video-target-top"></div>
+       <div class="video-target video-target-right"></div>
+       <div class="video-target video-target-bottom"></div>
+       <div class="video-target video-target-left"></div>
+      <video playsinline autoplay loop muted id="home-video">
+        <source src="<%= image_path('liquidVideo_banner_video.mp4')%>" type="video/mp4" />
+          Your browser does not support video
+      </video>
+    </div>
+
+    <p>Liquid Video Software Enables 3D and Virtual X-Ray Vision Capabilities Using Your Existing Security Video Cameras.</p>
+
+   <div class="quote-mobile">
+      <div class="quote-button-box">
+      <%= link_to "Get A Quote", "#", class: "quote-button" %>
+      </div>
+    </div>
+  </div>
+
+</div>

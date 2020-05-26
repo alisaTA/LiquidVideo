@@ -268,5 +268,49 @@
 }
 
 
+// IPAD
+@media only screen and (max-width: 1200px) {
+// benefits
+  .benefits-banner {
+    padding: 36px 150px 70px 150px;
+    line-height: 1.8;
+  }
+
+  .benefits-banner p {
+    font-size: 18px;
+    font-family: 'Roboto';
+  }
+
+  .benefits-banner ul li span {
+    font-size: 18px !important;
+    font-family: 'Roboto'
+  }
+
+  .benefits-banner #section-header p {
+    font-size: 32px !important;
+    font-weight: 500;
+  }
+// benefits
+
+// experience
+  .experience-text-wrap{
+    padding: 100px 150px 75px 150px !important;
+  }
+
+  .experience-text-wrap #experience-header .experience-text-inner p {
+
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    color: #303030;
+  }
+// experience
+
+}
+// IPAD
+
+
+
 
 

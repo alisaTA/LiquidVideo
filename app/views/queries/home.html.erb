@@ -8,6 +8,12 @@
 </div>
 
 
+<!-- HOMEBANNER -->
+<% if mobile? %>
+
+<%= render 'partials/mobile-home-banner' %>
+
+<% else %>
 
 <div class="home-banner-wrap">
   <div class="banner-title">
@@ -20,7 +26,12 @@
   <!-- <div class="vertical-line"></div> -->
   <!-- VIDEOPLAYER -->
     <div class="background-videoplayer">
+      <div class="video-target video-target-top"></div>
+       <div class="video-target video-target-right"></div>
+       <div class="video-target video-target-bottom"></div>
+       <div class="video-target video-target-left"></div>
       <video playsinline autoplay loop muted id="home-video">
+
         <source src="<%= image_path('liquidVideo_banner_video.mp4')%>" type="video/mp4" />
           Your browser does not support video
       </video>
@@ -28,6 +39,8 @@
   <!-- VIDEOPLAYER -->
   </div>
 
+  <% end %>
+<!-- HOMEBANNER -->
 
   <!-- BENEFITS -->
   <div class="benefits-banner">
@@ -56,11 +69,12 @@
   <!-- EXPERIENCE TEXT -->
 
   <!-- ENDORSEMENTS -->
-  <%   def mobile? # has to be in here because it has access to "request"
+  <%#   def mobile? # has to be in here because it has access to "request"
       request.user_agent =~ /\b(Android|iPhone|iPad|Windows Phone|Opera Mobi|Kindle|BackBerry|PlayBook)\b/i
    end %>
 
-   <% if mobile? %>
+  <!-- moved 'mobile?' method to queriesHelper -->
+   <% if mobile? %> 
     <%=  render 'queries/endorsement-mobile.html.erb' %>
    <% else %>
   <div class="endorse-container">

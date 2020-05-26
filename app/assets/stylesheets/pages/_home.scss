@@ -1,7 +1,37 @@
 // Specific CSS for your home-page
+.video-target{
+  background: #FFFFFF; 
+  position: absolute;
+  height: 2px;
+  width: 17px;
+}
+
+.video-target-top{
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  right: 50%;
+  top: -8%;
+}
+
+.video-target-right{
+  bottom: 55%;
+  right: -35px;
+}
+
+.video-target-bottom{
+  bottom: 8%;
+  right: 50%;
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.video-target-left{
+  bottom: 55%;
+  left: -35px;
+}
+
 .home-banner{
   position: relative;
-
 }
 
 .home-banner-wrap {
@@ -10,7 +40,7 @@
   height: 600px;
   display: flex;
   flex-direction: row;
-  padding: 100px 75px;
+  padding: 100px 150px;
 }
 
 // #section-header{
@@ -25,6 +55,7 @@
 // }
 
 .background-videoplayer  {
+  position: relative;
   width: 50%;
    video { 
     // right: 0;
@@ -66,7 +97,7 @@
 }
 
   p {
-    padding: 30px 30px 60px 0;
+    padding: 30px 30px 80px 0px;
     font-family: inherit;
     font-style: oblique;
     font-weight: 100;
