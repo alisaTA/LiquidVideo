@@ -4,12 +4,14 @@ const ToggleFaq = {
   elements: [],
 
   toggle(elem){
-    let plus    = elem.target.firstElementChild || elem.target;
-    let faqCard = elem.currentTarget;
+    let plus     = elem.target.firstElementChild || elem.target;
+    let faqCard  = elem.currentTarget;
+    let question = faqCard.querySelector('.faq-a'); 
     if ( plus  && plus.id === 'plus-icon' || plus.id === 'minus-icon' ) {  
       let isActive = faqCard.classList.toggle('faq-active'); 
+      question.classList.toggle('faq-q-active');
       this.toggleCardIcon(isActive, faqCard);
-      setTimeout(() => this.handleIntersection(faqCard), 75);
+      // setTimeout(() => this.handleIntersection(faqCard), 75);
     }
   },
   setListener(){
@@ -21,18 +23,20 @@ const ToggleFaq = {
   },
 
   handleIntersection(card) {
-    let answer, boundingAnswer, boundingCard, offSet;
-    answer         = card.querySelectorAll('.faq-a')[0];
-    boundingAnswer = answer.getBoundingClientRect()?.bottom;
-    boundingCard   = card.getBoundingClientRect()?.bottom;
-    offSet         = boundingCard - boundingAnswer; 
-    if ( offSet < -80 ) {
-      offSet = Math.floor(-(offSet) + 165);
-      let newHeight = offSet < 180 ? '180px' : offSet.toString() + 'px !important'
-      card.style.cssText = "height: " + newHeight;
-    } else {
-      card.style.cssText = '';
-    }
+    card.style.height = 'auto !important';
+    // return;
+    // let answer, boundingAnswer, boundingCard, offSet;
+    // answer         = card.querySelectorAll('.faq-a')[0];
+    // boundingAnswer = answer.getBoundingClientRect()?.bottom;
+    // boundingCard   = card.getBoundingClientRect()?.bottom;
+    // offSet         = boundingCard - boundingAnswer; 
+    // if ( offSet < -80 ) {
+    //   offSet = Math.floor(-(offSet) + 165);
+    //   let newHeight = offSet < 180 ? '180px' : offSet.toString() + 'px !important'
+    //   card.style.cssText = "height: " + newHeight;
+    // } else {
+    //   card.style.cssText = '';
+    // }
   },
 
   toggleCardIcon(active, card) {

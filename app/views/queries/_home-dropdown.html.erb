@@ -3,13 +3,13 @@
      <div class="faq-card home-dropdown-card">
        <div class="faq-q" id="vision">
          <p>Vision</p>
-         <div id="icons vision">
+         <div id="icons vision" style="z-index: 99">
             <%= image_tag 'plus-icon.png', id: 'plus-icon'%>
             <%= image_tag 'minus-icon.png', id: 'minus-icon', style: "display: none;" %>
          </div>
        </div> 
      <div class="faq-a">
-      <%= render 'queries/vision' %>
+      <%= render 'queries/vision', style: 'height: auto !important; transition: none;' %>
      </div>
    </div>
 
@@ -17,7 +17,7 @@
      <div class="faq-card home-dropdown-card">
        <div class="faq-q" id='contact'>
          <p>Contact Us</p>
-         <div id="icons contact">
+         <div id="icons contact" style="z-index: 99">
             <%= image_tag 'plus-icon.png', id: 'plus-icon'%>
             <%= image_tag 'minus-icon.png', id: 'minus-icon', style: "display: none;" %>
          </div>
