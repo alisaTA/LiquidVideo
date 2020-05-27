@@ -307,10 +307,85 @@
   }
 // experience
 
+// home-dropdown
+  .contact-form-wrap {
+    padding: 40px 0px !important;
+  }
+
+  .contact-form-wrap .contact-form{
+    padding: 60px 40px !important;
+  }
+// home-dropdown
+
 }
 // IPAD
 
 
+// IPAD MINI 
+@media only screen and (max-width: 800px) { 
+
+  .banner-video-mobile p {
+    padding: 50px 75px 20px !important;
+  }
+  .experience-text-inner {
+    font-size: 16px !important;
+  }
+
+  .endorse-name-ipad p {
+    font-size: 14px !important;
+  }
+  .endorse-name-ipad p:nth-child(2) {
+    font-size: 12px !important;
+  }
+
+  .endorse-quote-ipad p {
+    font-size: 12px !important;
+  }
+
+  .home-dropdown .faq-card {
+    padding: 50px 75px !important;
+  }
+
+  .faq-wrap .faq-a {
+    padding: 15px 0px !important;
+  }
+  
+  .statement-wrap .statement p{
+    font-size: 30px !important;
+  }
+
+// 
+
+.navbar-container{
+  padding: 12px 80px !important;
+}
+
+.benefits-banner{
+  padding: 36px 80px 70px 80px !important;
+}
+
+.experience-text-wrap{
+  padding: 100px 80px 75px 80px !important;
+}
+
+.endorsement-card-wrap-ipad{
+  padding: 0px 80px 80px !important;
+}
+.footer .contact-info{
+  padding-left: 80px !important;
+}
+
+.footer .footer-links {
+  padding-right: 80px !important;
+}
+
+.main-faq .faq-wrap{
+  padding: 0px 80px !important;
+}
+// 
+
+}
+// IPAD MINI
 
 
 

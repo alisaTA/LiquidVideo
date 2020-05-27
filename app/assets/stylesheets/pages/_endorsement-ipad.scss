@@ -1,0 +1,91 @@
+.endorsement-card-wrap-ipad{
+    padding: 0px 150px 100px;
+    background: #F9F9F9;
+
+  .endorsement-title-ipad{
+    padding: 90px 0px 40px 0px;
+  }
+
+  .endorsement-title-ipad p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    color: #183B56;
+  }
+
+  .endorsement-card-ipad{
+    height: 360px;
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.03);
+    border-radius: 8px;
+    margin-bottom: 25px;
+  }
+
+  .endorsement-card-inner-ipad{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .endorsement-card-photo-wrap-ipad{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding-top: 40px;
+    padding-left: 40px;
+  }
+
+  .endorsement-card-content-wrap-ipad{
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+    padding-right: 95px;
+    padding-left: 70px;
+    justify-content: space-between;
+  }
+
+  .endorse-logo img {
+    border-radius: 0px !important;
+  }
+
+  img {
+    padding: 0px !important;
+  }
+}
+
+.endorse-quote-ipad{
+  p {
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 20px;
+
+    color: #5A5A5A;
+  }
+}
+
+
+.endorse-name-ipad{
+  p:nth-child(1){
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #2B2B2B;
+  }
+  p:nth-child(2){
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #2B2B2B;
+  }
+}

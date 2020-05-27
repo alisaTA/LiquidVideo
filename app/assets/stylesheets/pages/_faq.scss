@@ -24,14 +24,18 @@
   }
 
   .faq-card{
-    padding: 30px;
+    padding: 30px 30px 40px;
     height: 90px;
     background: #FFFFFF;
     border: 1px solid #E5EAF4;
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.03);
     border-radius: 8px;
-    transition: height .2s ease;
+    // transition: height 1s ease;
     margin-bottom: 10px;
+    -webkit-transition: all 1s linear;
+     -moz-transition: all 1s linear;
+     -o-transition: all 1s linear;
+     transition: all 1s linear;
   }
 
   #plus-icon img{
@@ -42,6 +46,7 @@
 
   #icons {
     cursor: pointer;
+    z-index: 99;
   }
 }
 
@@ -61,22 +66,30 @@
   .faq-a{
     opacity: 0;
     height: 0px;
-    transition: opacity .1s;
-    transition-delay: .1s;
+    // transition: opacity .1s;
+    // transition-delay: .1s;
     font-size: 18px;
     padding: 15px 35px;
     color: #495057;
+    -webkit-transition: height 1s linear;
+     -moz-transition: height 1s linear;
+     -o-transition: height 1s linear;
+     transition: height 1s linear;
   }
 }
 
 
 
-.faq-active{
-  height: 180px !important;
+.faq-card.faq-active{
+  height: auto !important;
     .faq-a{
       opacity: 1 !important;
       height: auto !important;
     }
+}
+.faq-q.faq-q-active{
+  opacity: 1 !important;
+  height: auto !important;
 }
 
 

@@ -78,7 +78,8 @@
 
   <!-- moved 'mobile?' method to queriesHelper -->
    <% if mobile? %> 
-    <%=  render 'queries/endorsement-mobile.html.erb' %>
+    <%#  render 'queries/endorsement-mobile.html.erb' %>
+    <%=  render 'partials/endorsement-card-mobile.html.erb' %>
    <% else %>
   <div class="endorse-container">
     <div id='section-header'><p>Endorsements</p></div>
