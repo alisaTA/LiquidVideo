@@ -1,271 +1,269 @@
-@media only screen and (max-width: 850px) {
-  body{
-    background: blue;
-  }
-  .home-banner > .banner-title {
-    margin-top: 50px;
-    padding-top: 0px;
-  }
+// @media only screen and (max-width: 850px) {
 
-  .home-banner > .banner-title h1 {
-    margin-top: 50px;
-    font-size: 40px;
-  }
+//   .home-banner > .banner-title {
+//     margin-top: 50px;
+//     padding-top: 0px;
+//   }
 
-  .home-banner > .banner-title h3 {
-    font-size: 16px;
-  } 
-  // 
-  .intro-text-wrap > .intro-text-inner > #title-sub-header {
-    font-size: 26px;
-  }
+//   .home-banner > .banner-title h1 {
+//     margin-top: 50px;
+//     font-size: 40px;
+//   }
 
-  // 
-  .feature-circle-wrap {
-    height: 600px;
-  }
+//   .home-banner > .banner-title h3 {
+//     font-size: 16px;
+//   } 
+//   // 
+//   .intro-text-wrap > .intro-text-inner > #title-sub-header {
+//     font-size: 26px;
+//   }
 
-  // 
-  .read-about-banner #header {
-    font-size: 26px;
-  }
+//   // 
+//   .feature-circle-wrap {
+//     height: 600px;
+//   }
 
-  .read-about-banner p {
-    font-size: 18px;
-  }
-  // 
-  #card-title{
-    font-size: 14px !important;
-  }
+//   // 
+//   .read-about-banner #header {
+//     font-size: 26px;
+//   }
 
-  .flip-card-back{
-    padding: 30px;
-  }
+//   .read-about-banner p {
+//     font-size: 18px;
+//   }
+//   // 
+//   #card-title{
+//     font-size: 14px !important;
+//   }
+
+//   .flip-card-back{
+//     padding: 30px;
+//   }
 
 
-  .endorse-card-content h4{
-    font-size: 15px;
-    font-weight: normal;
-    align-items: flex-start;
-  }
+//   .endorse-card-content h4{
+//     font-size: 15px;
+//     font-weight: normal;
+//     align-items: flex-start;
+//   }
 
-  .endorse-card-content h3{
-    font-size: 13px;
-    font-weight: 300;
+//   .endorse-card-content h3{
+//     font-size: 13px;
+//     font-weight: 300;
 
-  }
+//   }
 
-}
+// }
 
 
 
-@media only screen and (max-width: 750px)  {
-  .home-banner > .banner-title {
-    margin-top: 25px;
-    padding-top: 0px;
-  }
+// @media only screen and (max-width: 750px)  {
+//   .home-banner > .banner-title {
+//     margin-top: 25px;
+//     padding-top: 0px;
+//   }
 
-  .home-banner > .banner-title h1 {
-    margin-top: 0px !important;
-    font-size: 20px !important;
-  }
+//   .home-banner > .banner-title h1 {
+//     margin-top: 0px !important;
+//     font-size: 20px !important;
+//   }
 
-  .home-banner > .banner-title h3 {
-    font-size: 12px;
-  } 
+//   .home-banner > .banner-title h3 {
+//     font-size: 12px;
+//   } 
 
-  // 
-  .intro-text-wrap > .intro-text-inner > #title-sub-header {
-    font-size: 18px;
-  }
-  // 
+//   // 
+//   .intro-text-wrap > .intro-text-inner > #title-sub-header {
+//     font-size: 18px;
+//   }
+//   // 
 
-  .feature-circle-wrap {
-    height: 500px;
-  }
-  // 
+//   .feature-circle-wrap {
+//     height: 500px;
+//   }
+//   // 
 
-  .read-about-banner #section-header {
-    font-size: 22px;
-  }
+//   .read-about-banner #section-header {
+//     font-size: 22px;
+//   }
 
-  .read-about-banner p {
-    font-size: 14px !important;
-  }
-  .read-about-banner li {
-    font-size: 14px !important;
-  }
-  // 
-  .industries-wrap {
-    margin-top: 85px;
-  }
+//   .read-about-banner p {
+//     font-size: 14px !important;
+//   }
+//   .read-about-banner li {
+//     font-size: 14px !important;
+//   }
+//   // 
+//   .industries-wrap {
+//     margin-top: 85px;
+//   }
 
-  .industry{
-    width: 100% !important;
-  }
+//   .industry{
+//     width: 100% !important;
+//   }
 
-  #card-title{
-    font-size: 14px !important;
-  }
+//   #card-title{
+//     font-size: 14px !important;
+//   }
 
-  // 
+//   // 
 
-  .footer > .footer-inner {
-    width: 75%;
-  }
+//   // .footer > .footer-inner {
+//   //   width: 75%;
+//   // }
 
-  .footer > .footer-inner > .contact-us-wrap  {
-    width: 100%;
-    font-size: 12px;
-  }
+//   .footer > .footer-inner > .contact-us-wrap  {
+//     width: 100%;
+//     font-size: 12px;
+//   }
 
-  .footer > .footer-inner > .contact-us-wrap #sub-header {
-    font-size: 12px;
-  }
+//   .footer > .footer-inner > .contact-us-wrap #sub-header {
+//     font-size: 12px;
+//   }
 
-  .footer .footer-inner .follow-us-bar #sub-header{
-    font-size: 14px;
-  }
+//   .footer .footer-inner .follow-us-bar #sub-header{
+//     font-size: 14px;
+//   }
 
-  // endorsements
+//   // endorsements
 
-  #section-header{
-    font-size: 16px !important;
-  }
+//   #section-header{
+//     font-size: 16px !important;
+//   }
 
-  // contact form
+//   // contact form
 
-  .form-card-wrap{
-    height: 100vh;
-    position: fixed;
-    overflow: scroll;
-    width: 100%;
-    bottom: 0px;
-    top: 0px;
-  }
+//   .form-card-wrap{
+//     height: 100vh;
+//     position: fixed;
+//     overflow: scroll;
+//     width: 100%;
+//     bottom: 0px;
+//     top: 0px;
+//   }
 
-  .form-content-wrap:nth-child(1){
-    font-size: 22px;
-  }
+//   .form-content-wrap:nth-child(1){
+//     font-size: 22px;
+//   }
 
-  .form-content-wrap:nth-child(2){
-    font-size: 8px;
-  }
+//   .form-content-wrap:nth-child(2){
+//     font-size: 8px;
+//   }
 
-  .form-row{
-    flex-direction: column !important;
-  }
+//   .form-row{
+//     flex-direction: column !important;
+//   }
 
-  .form-card-wrap .form-submit {
-    margin-bottom: 25px;
-  }
+//   .form-card-wrap .form-submit {
+//     margin-bottom: 25px;
+//   }
 
-  .form-card-wrap .white-form-submit {
-    width: 100%;
-  }
+//   .form-card-wrap .white-form-submit {
+//     width: 100%;
+//   }
 
-  // FAQ
+//   // FAQ
 
-  .faq-card-wrap{
-    margin: 0px !important;
-  }
-}
-
-
-@media only screen and (max-width: 450px) {
-  // endorsements
-
-  #section-header{
-    font-size: 16px !important;
-  }
-
-  .endorse-card{
-    display: flex;
-    background: white;
-    border-radius: 2px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    margin: 25px 0 10px 0;
-    height: 525px !important;
-    flex-direction: column;
-    justify-content: space-evenly;
-    // position: relative;
-    overflow: hidden;
-  }
-
-  .endorse-photo{
-    width: 50%;
-    margin: 0 auto;
-    padding-top: 25px;
-    min-height: 30%;
-    max-height: 30%;
-  }
+//   .faq-card-wrap{
+//     margin: 0px !important;
+//   }
+// }
 
 
-  .endorse-card-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    // padding: 8px;
-    // padding-top: 50px;
-    max-height: 250px;
-    padding-top: 0px !important;
-  }
+// @media only screen and (max-width: 450px) {
+//   // endorsements
 
-  .endorse-card-content h4{
-    font-size: 20px;
-    font-weight: normal;
-    align-items: flex-start;
-  }
+//   #section-header{
+//     font-size: 16px !important;
+//   }
 
-  .endorse-card-content h3{
-    font-size: 18px;
-    font-weight: 300;
+//   .endorse-card{
+//     display: flex;
+//     background: white;
+//     border-radius: 2px;
+//     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+//     margin: 25px 0 10px 0;
+//     height: 525px !important;
+//     flex-direction: column;
+//     justify-content: space-evenly;
+//     // position: relative;
+//     overflow: hidden;
+//   }
 
-  }
+//   .endorse-photo{
+//     width: 50%;
+//     margin: 0 auto;
+//     padding-top: 25px;
+//     min-height: 30%;
+//     max-height: 30%;
+//   }
 
-  .endorse-name{
-    align-content: flex-start;
-  }
 
-  .endorse-content{
-    flex-direction: column;
-  }
+//   .endorse-card-content{
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-around;
+//     // padding: 8px;
+//     // padding-top: 50px;
+//     max-height: 250px;
+//     padding-top: 0px !important;
+//   }
+
+//   .endorse-card-content h4{
+//     font-size: 20px;
+//     font-weight: normal;
+//     align-items: flex-start;
+//   }
+
+//   .endorse-card-content h3{
+//     font-size: 18px;
+//     font-weight: 300;
+
+//   }
+
+//   .endorse-name{
+//     align-content: flex-start;
+//   }
+
+//   .endorse-content{
+//     flex-direction: column;
+//   }
   
-  .endorse-quote{
-    padding: 30px 8px 0 15px;
-    height: 150px;
-  }
+//   .endorse-quote{
+//     padding: 30px 8px 0 15px;
+//     height: 150px;
+//   }
 
-  .endorse-logo{
-    width: 100%;
-    padding-right: 50px;
-    margin-top: 100px;
-  }
+//   .endorse-logo{
+//     width: 100%;
+//     padding-right: 50px;
+//     margin-top: 100px;
+//   }
 
-  .endorse-logo img{
-    overflow: hidden;
-    max-height: 100px;
-    width: 80%;
-    object-fit: contain;
-    float: right;
-  }
-}
+//   .endorse-logo img{
+//     overflow: hidden;
+//     max-height: 100px;
+//     width: 80%;
+//     object-fit: contain;
+//     float: right;
+//   }
+// }
 
 
 
-@media only screen and (max-width: 700px) and (max-width: 850px){
-  .endorse-name h4{
-        font-size: 15px !important; 
-  }
+// @media only screen and (max-width: 700px) and (max-width: 850px){
+//   .endorse-name h4{
+//         font-size: 15px !important; 
+//   }
 
-  .endorse-quote h3{
-        font-size: 14px !important;
-  }
+//   .endorse-quote h3{
+//         font-size: 14px !important;
+//   }
 
-  .endorse-logo{
-        min-width: 25% !important;
-  }
-}
+//   .endorse-logo{
+//         min-width: 25% !important;
+//   }
+// }
 
 
 // IPAD
@@ -388,4 +386,158 @@
 // IPAD MINI
 
 
+// MOBILE PORTRAIT
+@media only screen and (max-width: 500px) { 
+  // nav
+  .navbar-container{
+    padding: 12px 25px !important;
+  }
+
+  .navbar-container .nav-company {
+    width: 100%;
+  }
+
+  .navbar-container .nav-company .navbar-company{
+    margin: 0 auto;
+    font-size: 17px;
+  }
+  // nav
+
+  // homebanner
+  .home-banner-wrap-mobile{
+    padding: 50px 50px 30px !important;
+  }
+
+  .banner-title-mobile{
+    width: 100% !important;
+  }
+
+  .banner-video-mobile{
+    padding: 50px 0px 0px 0px !important;
+  }
+
+  .banner-video-mobile p {
+    padding: 50px 0px 20px !important;
+    font-size: 15px !important;
+  }
+
+  .quote-button-box{
+    height: 25px;
+    width: 100px;
+    font-size: 10px;
+    padding: 15px;
+    line-height: 0px;
+  }
+  // homebanner
+
+  // benefits
+  .benefits-banner{
+    padding: 36px 50px 70px 50px !important;
+  }
+
+  .benefits-banner p {
+    font-size: 16px;
+  }
+
+  .benefits-banner ul li span {
+    font-size: 16px !important;
+  }
+
+  .benefits-banner #section-header p{
+    font-size: 17px !important;
+  }
+  // benefits
+
+  // experience
+  #experience-header{
+    padding: 0px !important;
+  }
+  #experience-header > p{
+    font-size: 17px;
+  }
+
+  .experience-text-wrap{
+    padding: 75px 50px 75px 50px !important;
+  }
+
+  .experience-text-inner{
+    padding: 0px !important;
+  }
+
+  .experience-text-inner p {
+    font-size: 16px !important;
+  }
+  // experience
+  
+
+  // endorsements
+  .endorse-card{
+    height: 80%;
+    flex-direction: column;
+    overflow: visible;
+    min-width: 100%;
+    margin-right: 35px;
+
+  }
+
+  .endorse-photo{
+    height: 25%;
+  }
+
+  .endorse-container #section-header{
+    padding-left: 35px !important;
+  }
+
+  .endorse-container #section-header p {
+    font-size: 17px;
+  }
+
+  .endorse-container{
+    padding: 75px 0px;
+  }
+
+  .endorsements-wrap-ipad{
+    padding: 10px 35px !important;
+
+    height: 100vh;
+    display: flex;
+    overflow-x: scroll;
+
+  }
+
+  .endorse-photo{
+    max-width: 100% !important;
+    min-width: 100% !important;
+  }
+
+  .endorse-photo img {
+    width: 50% !important;
+    margin: 0 auto !important;
+  }
+
+  .endorse-quote {
+    padding: 0px !important;
+  }
+
+  .endorse-logo img {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .endorse-card-content{
+    padding: 0px 10px 0px 30px !important;
+  }
+
+  // endorsements
+
+
+
+// footer
+.footer-inner{
+  flex-direction: column !important;
+}
+// footer
+
+}
+// MOBILE PORTRAIT
 
