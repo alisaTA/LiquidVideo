@@ -28,7 +28,7 @@ import smoothScroll from '../smoothScroll';
 
   setModalListener('#contactModal', '#contactMe', '#xOutIcon')
   initAutoPlay('#home-video');
-  setNavListener('.navbar-toggler');
+  setNavListener('#nav-burger');
   initFaq();
   smoothScroll();
   Nav.setNavScroll();

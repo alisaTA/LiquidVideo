@@ -1,4 +1,5 @@
 .navbar-container{
+  position: relative;
   display: flex;
   background-color: white;
   flex-direction: row;
@@ -42,5 +43,35 @@
     &:hover {
       border: 0px !important;
     }
+  }
+}
+
+
+#nav-burger{
+    position: absolute;
+    right: 5%;
+    bottom: 35%;
+}
+
+
+.mobile-nav-links{
+  height: 0px;
+  overflow: hidden;
+  transition: height .25s ease;
+}
+
+.mobile-nav-links.nav-active{
+  height: 225px;
+}
+
+.mobile-nav-links {
+
+  ul {
+    list-style: none;
+    text-align: center;
+  }
+
+  ul li:last-child{
+    padding-top: 25px;
   }
 }

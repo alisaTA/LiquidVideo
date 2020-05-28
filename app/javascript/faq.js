@@ -7,9 +7,14 @@ const ToggleFaq = {
     let plus     = elem.target.firstElementChild || elem.target;
     let faqCard  = elem.currentTarget;
     let question = faqCard.querySelector('.faq-a'); 
+    let card     = faqCard.querySelector('.faq-card');
+
     if ( plus  && plus.id === 'plus-icon' || plus.id === 'minus-icon' ) {  
       let isActive = faqCard.classList.toggle('faq-active'); 
       question.classList.toggle('faq-q-active');
+      question.style.display = isActive ? '' : 'none';
+      // card.style.cssText = isActive ? '' : 'none';
+
       this.toggleCardIcon(isActive, faqCard);
       // setTimeout(() => this.handleIntersection(faqCard), 75);
     }
@@ -22,8 +27,8 @@ const ToggleFaq = {
     }
   },
 
-  handleIntersection(card) {
-    card.style.height = 'auto !important';
+  // handleIntersection(card) {
+    // card.style.height = 'auto !important';
     // return;
     // let answer, boundingAnswer, boundingCard, offSet;
     // answer         = card.querySelectorAll('.faq-a')[0];
@@ -37,19 +42,20 @@ const ToggleFaq = {
     // } else {
     //   card.style.cssText = '';
     // }
-  },
+  // },
 
   toggleCardIcon(active, card) {
     let plusIcon  = card.querySelector( '#plus-icon' );
     let minusIcon = card.querySelector( '#minus-icon' );
     let cWrap     = card.querySelector( '.contact-form-wrap' );
+
     if ( active ) {
-      if ( cWrap && cWrap.style.display === 'none' ) { cWrap.style.display    = ''; }
+      // if ( cWrap && cWrap.style.display === 'none' ) { cWrap.style.display    = ''; }
       
       plusIcon.style.display  = 'none';
       minusIcon.style.display = '';
     }else {
-      if ( cWrap && cWrap.style.display === '' ) {  cWrap.style.display    = 'none'; } 
+      // if ( cWrap && cWrap.style.display === '' ) {  cWrap.style.display    = 'none'; } 
 
       plusIcon.style.display = '';
       minusIcon.style.display = 'none';
