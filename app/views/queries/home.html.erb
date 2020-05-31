@@ -83,12 +83,16 @@
     <%=  render 'partials/endorsement-card-mobile.html.erb' %>
    <% else %>
   <div class="endorse-container">
-    <div class="carousel-next" id='next'>
-      <%= image_tag( 'carousel-next' ) %>
-    </div>
-    <div class="carousel-previous" id='previous'>
-      <%= image_tag( 'carousel-next' ) %>
-    </div>
+  
+  <% if mobile? %>
+        <div class="carousel-next" id='next'>
+          <%= image_tag( 'carousel-next' ) %>
+        </div>
+        <div class="carousel-previous" id='previous'>
+          <%= image_tag( 'carousel-next' ) %>
+        </div>
+  <% end %>
+
     <div id='section-header'><p>Endorsements</p></div>
     
   <div class="endorsements-wrap-ipad">
