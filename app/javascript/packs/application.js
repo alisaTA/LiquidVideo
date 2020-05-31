@@ -24,6 +24,7 @@ import setNavListener from '../navListener';
 import initFaq from '../faq';
 import Nav from '../navScrollToDropdown';
 import smoothScroll from '../smoothScroll';
+import initCarousel from '../carousel';
 
 
   setModalListener('#contactModal', '#contactMe', '#xOutIcon')
@@ -33,6 +34,7 @@ import smoothScroll from '../smoothScroll';
   smoothScroll();
   Nav.setNavScroll();
   Nav.scrollOnReload(window.location);
+  initCarousel();
     
     
 

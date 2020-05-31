@@ -292,7 +292,7 @@
 
 // experience
   .experience-text-wrap{
-    padding: 100px 150px 75px 150px !important;
+    padding: 36px 150px 75px 150px !important;
   }
 
   .experience-text-wrap #experience-header .experience-text-inner p {
@@ -320,7 +320,7 @@
 
 
 // IPAD MINI 
-@media only screen and (max-width: 800px) { 
+@media only screen and (max-width: 900px) { 
 
   .banner-video-mobile p {
     padding: 50px 75px 20px !important;
@@ -363,7 +363,7 @@
 }
 
 .experience-text-wrap{
-  padding: 100px 80px 75px 80px !important;
+  padding: 36px 80px 75px 80px !important;
 }
 
 .endorsement-card-wrap-ipad{
@@ -387,7 +387,7 @@
 
 
 // MOBILE PORTRAIT
-@media only screen and (max-width: 500px) { 
+@media only screen and (max-width: 600px) { 
   // nav
   .navbar-container{
     padding: 12px 25px !important;
@@ -471,17 +471,53 @@
   
 
   // endorsements
-  .endorse-card{
-    height: 80%;
-    flex-direction: column;
-    overflow: visible;
-    min-width: 100%;
-    margin-right: 35px;
+
+
+  .endorse-container{
+    padding: 75px 0px;
+    position: relative;
+  }
+
+  .carousel-next{
+    position: absolute;
+    right: 10px;
+    bottom: 50%;
+  }
+
+  .carousel-previous {
+    position: absolute;
+    bottom: 50%;
+    left: 10px;
+    transform: rotateY(180deg);
+  }
+
+  .endorsements-wrap-ipad{
+    margin: 10px 35px !important;
+    padding: 0px !important;
+    height: 60vh;
+    display: flex;
+    overflow-x: scroll;
 
   }
 
-  .endorse-photo{
-    height: 25%;
+  .endorse-card{
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: visible;
+    min-width: 100%;
+    margin-right: 35px;
+  }
+  
+  .endorse-card-content{
+    min-height: 50% !important;
+    justify-content: space-between !important;
+    padding: 0px 10px 0px 30px !important;
+  } 
+
+  .endorse-card-content h3 {
+    font-size: 16px;
+    line-height: 1.1;
   }
 
   .endorse-container #section-header{
@@ -492,22 +528,15 @@
     font-size: 17px;
   }
 
-  .endorse-container{
-    padding: 75px 0px;
-  }
 
-  .endorsements-wrap-ipad{
-    padding: 10px 35px !important;
-
-    height: 100vh;
-    display: flex;
-    overflow-x: scroll;
-
+  .endorse-photo{
+    min-height: 25% !important;
   }
 
   .endorse-photo{
     max-width: 100% !important;
     min-width: 100% !important;
+    margin-top: 20px !important;
   }
 
   .endorse-photo img {
@@ -519,25 +548,171 @@
     padding: 0px !important;
   }
 
+  .endorse-logo{
+    min-height: 20% !important;
+  }
+
   .endorse-logo img {
     width: 50%;
     margin: 0 auto;
   }
 
-  .endorse-card-content{
-    padding: 0px 10px 0px 30px !important;
-  }
+
 
   // endorsements
+  
+
+  // DROPDOWN
+  .home-dropdown .faq-card{
+    padding: 50px 35px !important;
+  }
+
+  .contact-form-inner{
+    width: 100% !important;
+  }
+
+  .home-dropdown .faq-q p {
+    font-size: 17px !important;
+    font-weight: bold;
+  }
+
+  .home-dropdown .faq-wrap .faq-card p {
+    font-size: 14px !important; 
+  }
+
+  .contact-form-wrap .contact-form {
+      padding: 30px 40px !important;
+  }
+
+  .home-dropdown .contact-form .contact-form-inner input {
+    height: 35px;
+    border-radius: 8px;
+
+  }
 
 
+  .home-dropdown .contact-form .contact-form-inner label {
+    font-size: 10px !important;
+  }
+
+
+  .home-dropdown .contact-form .contact-form-inner #contact-submit {
+    font-size: 10px !important;
+    width: 100%;
+  }
+
+  .home-dropdown .contact-form .contact-form-inner .before-submit-content p {
+    font-size: 10px !important;
+  }
+  // DROPDOWN
+
+
+  // faq
+  .main-faq .faq-wrap{
+    padding: 0px 35px !important;
+  }
+
+  .main-faq .faq-wrap .faq-card p {
+      font-size: 12px !important;
+   }
+
+   .main-faq .faq-wrap .faq-card{
+    padding: 30px 35px 40px !important;
+   }
+
+  // faq
+
+
+
+
+  // statement
+  .statement-wrap .statement {
+    height: auto;
+    padding: 50px 0px;
+  }
+
+  .statement-wrap .statement p{
+    font-size: 17px !important;
+  }
+  // statement
+
+
+
+  // qoute
+  .number-field label {
+    min-width: 60% !important;
+    padding: 5px;
+  }
+  // qoute
 
 // footer
 .footer-inner{
   flex-direction: column !important;
+  padding: 35px 0px !important;
+}
+
+.follow-social-networks {
+  position: absolute;
+  left: 0px;
+  justify-content: space-evenly !important;
+  font-size: 40px !important;
+}
+
+.footer-links{
+  display: none !important;
+}
+
+.footer-inner .contact-us-wrap{
+  justify-content: center !important;
+}
+
+.footer-inner .contact-info{
+  padding-left: 0px !important;
 }
 // footer
 
 }
 // MOBILE PORTRAIT
 
+
+
+// MOBILE SMALL
+@media only screen and (max-width: 370px) { 
+  .banner-video-mobile p {
+    padding: 50px 0px 20px !important;
+    font-size: 14px !important;
+  }
+
+  .benefits-banner p {
+    font-size: 14px;
+  }
+  .benefits-banner ul li span {
+    font-size: 12px !important;
+  }
+
+  .benefits-banner #section-header p{
+    font-size: 12px !important;
+  }
+
+  #experience-header > p{
+    font-size: 15px;
+  }
+
+  .experience-text-inner p {
+    font-size: 12px !important;
+  }
+
+  .endorse-quote h3{
+    font-size: 10px !important;
+  }
+
+  .endorse-name h4{
+    font-size: 12px;
+  }
+
+  .endorse-name h5{
+    font-size: 10px;
+  }
+
+}
+// MOBILE SMALL
