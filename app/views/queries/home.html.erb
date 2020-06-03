@@ -79,9 +79,12 @@
 
   <!-- moved 'mobile?' method to queriesHelper -->
    <% if tablet? %>
+
     <%#  render 'queries/endorsement-mobile.html.erb' %>
     <%=  render 'partials/endorsement-card-mobile.html.erb' %>
+
    <% else %>
+
   <div class="endorse-container">
 
   <% if mobile? %>
@@ -98,7 +101,7 @@
   <div class="endorsements-wrap-ipad">
 
     <div class="endorse-card">
-      <div class="endorse-photo"><%= image_tag('Ken 2C', width: '100%', height: '100%') %>
+      <div class="endorse-photo"><%= image_tag('Ken', width: '100%', height: '100%') %>
       </div>
       <div class="endorse-card-content">
         <div class="endorse-name">
@@ -118,7 +121,7 @@
 
 
     <div class="endorse-card">
-      <div class="endorse-photo"><%= image_tag('Neil 2C', width: '100%', height: '100%') %>
+      <div class="endorse-photo"><%= image_tag('Neil', width: '100%', height: '100%') %>
         <!-- <img src="" alt=""> -->
       </div>
       <div class="endorse-card-content">
@@ -141,7 +144,7 @@
 
     <div class="endorse-card">
       <div class="endorse-photo">
-        <%= image_tag('Mike 2C', width: '100%', height: '100%') %>
+        <%= image_tag('Mike', width: '100%', height: '100%') %>
 
       </div>
       <div class="endorse-card-content">
