@@ -43,13 +43,20 @@
       </nav>
     </div> -->
 
-
+<div class="nav-wrap">
   <div class="navbar-container">
      <!--  <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
         <div class="nav-company">
           <a class="navbar-company" href="/">LiquidVideo</a>
         </div>
         <ul class="navbar-items">
+          <% if mobile? %>
+          <div id="nav-burger">
+            <%= image_tag( 'nav-burger' ) %>
+          </div>
+
+          <% else %>
+
           <li class="nav-item">
             <a class="nav-link" href="#vision" id='#vision'>Vision</a>
           </li>
@@ -64,10 +71,32 @@
               <a class="nav-btn" href="/get-a-quote">Get A Quote</a>
             </div>
           </li>
+
+          <% end %>
           </ul>
+
         <!-- </div> -->
       <!-- </nav> -->
     </div>
+    <div class="mobile-nav-links">
+      <ul>
+        <li class="nav-item">
+          <a class="nav-link" href="#vision" id='#vision'>Vision</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/faq">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact" id='#contact'>Contact</a>
+        </li>
+        <li class="nav-item">
+          <div class="nav-button">
+            <a class="nav-btn" href="/get-a-quote">Get A Quote</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
 
     <!-- <div class="temp-back" style="background-color: #F9F9F9;"> -->
 

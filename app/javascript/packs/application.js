@@ -24,15 +24,17 @@ import setNavListener from '../navListener';
 import initFaq from '../faq';
 import Nav from '../navScrollToDropdown';
 import smoothScroll from '../smoothScroll';
+import initCarousel from '../carousel';
 
 
   setModalListener('#contactModal', '#contactMe', '#xOutIcon')
   initAutoPlay('#home-video');
-  setNavListener('.navbar-toggler');
+  setNavListener('#nav-burger');
   initFaq();
   smoothScroll();
   Nav.setNavScroll();
   Nav.scrollOnReload(window.location);
+  initCarousel();
     
     
 

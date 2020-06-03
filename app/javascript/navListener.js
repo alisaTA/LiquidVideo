@@ -1,6 +1,6 @@
 const setNavListener = (id) => {
   let _nav = document.querySelector(id);
-  let collapseElem = document.querySelector('#navbarNavDropdown');
+  let collapseElem = document.querySelector('.mobile-nav-links');
   if (_nav) {
     _nav.onclick = () => handleNavClick(collapseElem)
   }
@@ -8,7 +8,7 @@ const setNavListener = (id) => {
 
 
 const handleNavClick = (e) => {
-  e.classList.toggle('collapse')
+  e.classList.toggle('nav-active')
 }
 
 
