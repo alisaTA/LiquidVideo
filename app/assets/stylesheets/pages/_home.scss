@@ -105,7 +105,7 @@
     padding: 30px 30px 80px 0px;
     font-family: inherit;
     font-style: normal;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 0.04em;
@@ -193,6 +193,7 @@
 
   #section-header {
     font-size: 32px;
+    font-weight: 500;
     color: #183B56;
   }
 }
@@ -332,6 +333,7 @@
 }
 
 .benefits-banner{
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size:20px;
@@ -379,6 +381,7 @@
   padding: 58px 8% 60px 150px;
 
   .experience-text-inner{
+    font-family: 'Roboto', sans-serif;
     color: #303030;
     padding: 0px 9% 34px 0;
     height: 100%;
@@ -389,8 +392,9 @@
     line-height: 165%;
 
     p{
+      font-family: inherit;
       font-weight:300;
-      font-size: 24px;
+      font-size: 20px;
     }
   }
 
@@ -400,6 +404,7 @@
 }
 
  #experience-header {
+  font-family: inherit;
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
@@ -474,6 +479,7 @@
 
       .faq-q p:nth-child(1) {
         font-size: 36px;
+        font-weight: 500;
         color: #183B56;
       }
 
