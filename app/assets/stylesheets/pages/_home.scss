@@ -335,6 +335,8 @@
 .benefits-banner{
   display: flex;
   flex-direction: row;
+  padding: 75px 150px 60px 150px;
+  justify-content: space-between;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -344,12 +346,11 @@
   color: #303030;
   width: 100%;
   text-align: left;
-  padding: 75px 0px 60px 150px;
   font-weight: 300;
 
   .benefits-text{
     width: 70%;
-    padding-right: 150px;
+    padding-right: 0px;
   }
 
   #section-header {
@@ -402,22 +403,25 @@
   flex-direction: row;
   width: 100%;
   height: 500px;
-  padding: 58px 8% 60px 150px;
+  padding: 58px 150px 60px 150px;
+  justify-content: space-between;
+
 
   .experience-image {
-    padding-right: 114px;
+    padding-right: 0px;
+
     img {
-      object-fit: contain;
+      object-fit: fill;
     }
   }
 
   .experience-text{
-
+    padding-left: 80px;
   }
   .experience-text-inner{
     font-family: 'Roboto', sans-serif;
     color: #303030;
-    padding: 40px 9% 34px 0;
+    padding: 0px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -444,7 +448,7 @@
   font-size: 32px;
   line-height: 37px;
   color: #183B56;
-  padding: 34px 0 34px 0;
+  padding: 0px;
   }
 
 
