@@ -136,5 +136,20 @@
 
 
     <%= javascript_pack_tag 'application' %>
+
+    <script>
+      ((location) => {
+        if ( ( document.querySelector('#nav-burger') == null )  ) {
+          let links = [...document.querySelectorAll('.nav-link')];
+          links.forEach( ( link ) => {
+            if ( location.href === link.href || ( location.hash != '' && location.hash === link.hash ) ) {
+              link.style.borderBottom = '1px solid #08213D';
+            } else {
+              link.style.borderBottom = 'none';
+            } 
+          }) 
+        }
+    })(window.location)
+    </script>
   </body>
 </html>

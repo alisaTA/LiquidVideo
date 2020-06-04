@@ -35,7 +35,7 @@ import initCarousel from '../carousel';
   Nav.setNavScroll();
   Nav.scrollOnReload(window.location);
   initCarousel();
-    
+
     
 
 
