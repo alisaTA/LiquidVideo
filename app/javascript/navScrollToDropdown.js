@@ -1,5 +1,5 @@
 const handleClick = ( link ) => {
-  if ( document.querySelector('#nav-burger') == null ) {
+  if ( document.querySelector('#nav-burger') == null  ) {
     let links = [...document.querySelectorAll('.nav-link')];
     let notSelected = links.filter( ( l ) => l.href !== link.href )
     link.style.borderBottom = '1px solid #08213D';
