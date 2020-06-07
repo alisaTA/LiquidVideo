@@ -19,15 +19,37 @@
     font-size: 24px;
     text-align: center;
     margin-bottom: 15px;
-    padding: 35px;
+    padding: 60px;
   }
+
+  #query-form-message textarea {
+    height: 100px;
+  }
+
+  .after-submit-content{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+
+    color: #616161;
+    padding: 50px 0px 20px;
+  }
+
+  #contact-header-qoute {
+    padding: 50px;
+    text-align: center;
+  }
+
 </style>
 
 
 <div class="blue-banner" style="background: #08213D;height: 75px;"></div>
 <div class="container">
   <div class="contact-form-wrap">
-      <div id="contact-us-header">
+      <div id="contact-header-qoute">
         <p style="font-size: 32px;color: #183B56;">Get A Quote</p>
       </div>
       <div class="contact-form"  style="padding: 60px 150px;">
@@ -35,28 +57,34 @@
           <%= simple_form_for(@query) do |f| %>
           <%= f.hidden_field :form_type, value: 'quote' %>
           <div class="two-input-row">
-            <%= f.input :first_name, placeholder: 'first name'  %>
-            <%= f.input :last_name, placeholder: 'last name'  %>
+            <%= f.input :first_name %>
+            <%= f.input :last_name %>
           </div>
-          <%= f.input :email, placeholder: 'email' %>
-          <%= f.input :phone, placeholder: 'phone'  %>
-          <%= f.input :company, placeholder: 'company'  %>
+          <%= f.input :email %>
+          <%= f.input :phone, placeholder: '+1-456-789-1234' %>
+          <%= f.input :company %>
+          <%= f.input :company_website %>
+          <%= f.input :position %>
 
           <div class="number-field-wrap">
             <div class="number-field">
               <label for="query_facility_count">Number of facilities</label>
-              <%= f.input :facility_count, label: false%>
+              <%= f.input :facility_count, label: false %>
             </div>
             <div class="number-field">
               <label for="query_camera_count">Number of cameras/facilities</label>
-              <%= f.input :camera_count, label: false%>
+              <%= f.input :camera_count, label: false %>
             </div>
             <div class="number-field">
               <label for="query_radar_count">Number of radars/facilities</label>
-              <%= f.input :radar_count, label: false%>
+              <%= f.input :radar_count, label: false %>
             </div>
           </div>
-
+          
+          <div id="query-form-message">
+            <%= f.input :message %>  
+          </div>
+          
 
           <div class="before-submit-content">
             <p>
@@ -68,6 +96,12 @@
             <%= f.submit 'Submit', id: 'contact-submit' %>
             </div>
           <% end %>
+
+          <div class="after-submit-content">
+            <p>In addition, feel free to call us at +1-480-329-4705 
+               or email us at info@liquidvideo360.com
+             </p>
+          </div>
         </div>
       </div>
   </div>
