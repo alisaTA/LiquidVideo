@@ -44,9 +44,28 @@
 
 // IPAD
 @media only screen and (max-width: 1200px) {
+// banner
+  .nav-wrap .navbar-container {
+    padding: 12px 100px !important;
+  }
+
+  .home-banner-wrap-mobile {
+    padding: 50px 100px 75px !important;
+  }
+
+  .home-banner-wrap-mobile .banner-title-mobile {
+    padding: 0px 200px;
+    text-align: left;
+    width: 100% !important;
+  }
+// banner
+
+
+
 // benefits
   .benefits-banner {
-    padding: 36px 150px 70px 150px;
+    padding: 100px 100px 50px 100px !important;
+    flex-direction: column !important;
     line-height: 1.8;
   }
 
@@ -64,11 +83,30 @@
     font-size: 32px !important;
     font-weight: 500;
   }
+
+  .benefits-banner .benefits-text {
+    width: 100% !important;
+  }
+
+  .benefits-banner .benefits-image{
+    margin: 0 auto;
+    padding-top: 50px;
+  }
 // benefits
 
 // experience
   .experience-text-wrap{
-    padding: 36px 150px 75px 150px !important;
+    padding: 100px 100px 75px 100px !important;
+    flex-direction: column-reverse !important;
+    height: auto;
+  }
+
+  .experience-text-wrap .experience-text {
+    padding: 0px !important;
+  }
+
+  .experience-text-wrap .experience-text-inner {
+    padding-top: 50px;
   }
 
   .experience-text-wrap #experience-header .experience-text-inner p {
@@ -79,8 +117,19 @@
     font-size: 18px;
     color: #303030;
   }
+
+  .experience-text-wrap .experience-image {
+    padding: 50px 200px;
+  }
 // experience
 
+// endorsement
+  
+  .endorsement-card-wrap-ipad {
+    padding: 0px 100px 100px !important;
+  }
+
+// endorsement
 
 
 // home-dropdown
@@ -91,7 +140,24 @@
   .contact-form-wrap .contact-form{
     padding: 60px 40px !important;
   }
+
+  .home-dropdown .faq-card {
+    padding: 50px 100px !important;
+  }
 // home-dropdown
+
+
+// footer
+
+  .footer .contact-info {
+    padding-left: 100px !important;
+  }
+
+  .foter .footer-links {
+    padding-right: 100px !important;
+  }
+
+// footer
 
 }
 // IPAD
@@ -99,12 +165,44 @@
 
 // IPAD MINI 
 @media only screen and (max-width: 900px) { 
+  // banner
+  .home-banner-wrap-mobile .banner-title-mobile {
+    padding: 0px 100px;
+  }
 
   .banner-video-mobile p {
     padding: 50px 75px 20px !important;
   }
+  // banner
+
+
+  .benefits-banner {
+    padding: 100px 100px 50px 100px !important;
+
+  }
+
+  .experience-text-wrap{
+    padding: 100px 100px 75px 100px !important;
+
+  }
+
+  .experience-text-wrap .experience-image {
+    padding: 50px 100px;
+  }
+
+  .endorsement-card-wrap-ipad {
+    padding: 0px 100px 100px !important;
+  }
+
+
+
+  // experience
   .experience-text-inner {
     font-size: 16px !important;
+  }
+
+  .experience-text-wrap .experience-image {
+    padding: 50px 100px;
   }
 
   .endorse-name-ipad p {
@@ -144,20 +242,23 @@
   padding: 36px 80px 75px 80px !important;
 }
 
-.endorsement-card-wrap-ipad{
-  padding: 0px 80px 80px !important;
-}
+
 .footer .contact-info{
-  padding-left: 80px !important;
+  padding-left: 100px !important;
 }
 
 .footer .footer-links {
-  padding-right: 80px !important;
+  padding-right: 100px !important;
 }
 
-.main-faq .faq-wrap{
-  padding: 0px 80px !important;
-}
+
+// faq
+
+  .main-faq .faq-wrap{
+    padding: 0px 100px !important;
+  }
+
+// faq
 // 
 
 }
