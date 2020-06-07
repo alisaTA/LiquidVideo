@@ -59,8 +59,13 @@
           <li><span>Reduce security costs by increasing personnel flexibility.</span></li>
         </ul>
     </div>
-    <div class="benefits-image"><%= image_tag('Grey360', width: '100%', height: '100%') %>
-    </div>
+    <% unless mobile? || tablet? %>
+
+       <div class="benefits-image">
+          <%= image_tag('Grey360', width: '100%', height: '100%') %>
+       </div>
+       
+    <% end  %>
   </div>
 <!-- BENEFITS -->
 
