@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_21_131532) do
+ActiveRecord::Schema.define(version: 2020_06_07_045722) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,6 +26,9 @@ ActiveRecord::Schema.define(version: 2020_05_21_131532) do
     t.integer "facility_count"
     t.integer "camera_count"
     t.integer "radar_count"
+    t.string "company_website"
+    t.string "position"
+    t.text "message"
   end
 
 end
