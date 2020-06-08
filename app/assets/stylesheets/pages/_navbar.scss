@@ -51,6 +51,12 @@
     position: absolute;
     right: 5%;
     bottom: 35%;
+    transform: rotate(0deg);
+    transition: transform .25s ease-out;
+}
+
+.burger-active {
+  transform: rotate(90deg) !important;
 }
 
 

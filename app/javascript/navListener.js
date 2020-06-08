@@ -1,14 +1,16 @@
 const setNavListener = (id) => {
-  let _nav = document.querySelector(id);
+  let burger = document.querySelector(id);
   let collapseElem = document.querySelector('.mobile-nav-links');
-  if (_nav) {
-    _nav.onclick = () => handleNavClick(collapseElem)
+  if (burger) {
+    burger.onclick = () => handleNavClick(collapseElem, burger)
   }
 }
 
 
-const handleNavClick = (e) => {
+const handleNavClick = (e, burger) => {
+
   e.classList.toggle('nav-active')
+  burger.classList.toggle('burger-active');
 }
 
 

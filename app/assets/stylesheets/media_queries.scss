@@ -97,7 +97,7 @@
 // experience
   .experience-text-wrap{
     padding: 100px 100px 75px 100px !important;
-    flex-direction: column-reverse !important;
+    flex-direction: column !important;
     height: auto;
   }
 
@@ -119,7 +119,7 @@
   }
 
   .experience-text-wrap .experience-image {
-    padding: 50px 200px;
+    padding: 0 0 50px 0 !important;
   }
 // experience
 
@@ -138,7 +138,7 @@
   }
 
   .contact-form-wrap .contact-form{
-    padding: 60px 40px !important;
+    padding: 60px 0px !important;
   }
 
   .home-dropdown .faq-card {
@@ -164,6 +164,9 @@
 // faq
 
   .main-faq .faq-wrap{
+    padding: 0px 100px !important;
+  }
+  ._container{
     padding: 0px 100px !important;
   }
 
@@ -250,17 +253,6 @@
 
 // 
 
-.navbar-container{
-  padding: 12px 80px !important;
-}
-
-.benefits-banner{
-  padding: 36px 80px 70px 80px !important;
-}
-
-.experience-text-wrap{
-  padding: 36px 80px 75px 80px !important;
-}
 
 
 .footer .contact-info{
@@ -279,12 +271,25 @@
 // faq
 // 
 
+
+
 }
 // IPAD MINI
 
 
 // MOBILE PORTRAIT
 @media only screen and (max-width: 600px) { 
+
+  ._container {
+    padding: 0px 30px !important;
+  }
+
+
+
+  .home-banner-wrap-mobile .banner-title-mobile{
+    padding: 0px !important;
+  }
+
   // hide scroll bars 
   .endorsements-wrap-ipad::-webkit-scrollbar {
     display: none;
@@ -312,7 +317,7 @@
 
   // homebanner
   .home-banner-wrap-mobile{
-    padding: 50px 50px 30px !important;
+    padding: 50px 50px 50px !important;
   }
 
   .banner-title-mobile{
@@ -356,6 +361,11 @@
   // benefits
 
   // experience
+
+  .experience-text-wrap .experience-image {
+    padding: 30px 0px !important;
+  }
+
   #experience-header{
     padding: 0px !important;
   }
@@ -364,7 +374,7 @@
   }
 
   .experience-text-wrap{
-    padding: 75px 50px 75px 50px !important;
+    padding: 30px 50px 30px 50px !important;
   }
 
   .experience-text-inner{
@@ -381,8 +391,13 @@
 
 
   .endorse-container{
-    padding: 75px 0px;
+    padding: 30px 0px;
     position: relative;
+  }
+
+  .endorse-name {
+    text-align: center;
+    padding-bottom: 20px;
   }
 
   .carousel-next{
@@ -401,7 +416,7 @@
   .endorsements-wrap-ipad{
     margin: 10px 35px !important;
     padding: 0px !important;
-    height: 60vh;
+    height: 75vh;
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
@@ -417,10 +432,14 @@
     margin-right: 35px;
   }
   
+  .endorse-card .endorse-content {
+    text-align: center;
+  }
+
   .endorse-card-content{
     min-height: 50% !important;
     justify-content: space-between !important;
-    padding: 0px 10px 0px 30px !important;
+    padding: 0px 30px !important;
   } 
 
   .endorse-card-content h3 {
@@ -479,13 +498,13 @@
     width: 100% !important;
   }
 
-  .home-dropdown .faq-q p {
+  .home-dropdown .faq-q  p {
     font-size: 17px !important;
     font-weight: bold;
   }
 
-  .home-dropdown .faq-wrap .faq-card p {
-    font-size: 14px !important; 
+  .home-dropdown .faq-wrap .faq-a p {
+    font-size: 12px !important;
   }
 
   .contact-form-wrap .contact-form {
@@ -546,11 +565,11 @@
   // statement
   .statement-wrap .statement {
     height: auto;
-    padding: 50px;
+    padding: 50px 5px;
   }
 
   .statement-wrap .statement p{
-    font-size: 17px !important;
+    font-size: 14px !important;
   }
   // statement
 
@@ -589,6 +608,19 @@
 }
 // footer
 
+
+
+//CONTACT FORM
+
+.contact-form-wrap .contact-form {
+  padding: 30px 30px !important;
+}
+
+#qoute-looking-forward{
+  font-size: 14px !important;
+  padding: 50px 5px !important;
+}
+// CONTACT FORM
 }
 // MOBILE PORTRAIT
 
